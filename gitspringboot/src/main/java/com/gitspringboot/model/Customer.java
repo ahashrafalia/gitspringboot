@@ -32,7 +32,7 @@ public class Customer implements Serializable{
     @Column(name = "STREET")
     private String street;
     
-    @OneToMany(mappedBy="customer",targetEntity=Order.class,fetch=FetchType.LAZY)
+    @OneToMany(mappedBy="customer",targetEntity=Order.class,fetch=FetchType.EAGER)
     private Collection orders;
 
 	public long getCustId() {

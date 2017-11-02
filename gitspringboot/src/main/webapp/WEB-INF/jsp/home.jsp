@@ -11,5 +11,6 @@
 
 <a href="./addCustomer">Add Customer</a></br>
 <a href="./addOrder">Add Order</a></br>
+<a href="./findCustomer">Find Customer</a></br>
 </body>
 </html>

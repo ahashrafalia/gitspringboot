@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.gitspringboot.bean.CustomerBean;
 import com.gitspringboot.bean.OrderBean;
 import com.gitspringboot.model.Customer;
+import com.gitspringboot.model.Invoice;
 import com.gitspringboot.model.Order;
 import com.gitspringboot.service.CustomerService;
 import com.gitspringboot.service.OrderService;
@@ -72,9 +73,27 @@ public class CustomerController {
 		ord.setTotPrice(orderBean.getTotPrice());
 		ord.setUpdatedTime(new Date());
 		ord.setCustomer(cust2);
+		
+		Invoice inv=new Invoice();
+		inv.setAmountDue(1000-ord.getTotPrice());
+		inv.setOrder(ord);
+		inv.setOrderCancelledDt(new Date());
+		inv.setOrderRaisedDt(new Date());
+		inv.setOrderSettledDt(new Date());
+		inv.setUpdatedTime(new Date());
+		
+		ord.setInvoice(inv);
 		ord=orderService.save(ord);
 		System.out.println("Order added="+ord);
 		return "addOrder";
+	}
+	
+	@RequestMapping(value="/findCustomer",method=RequestMethod.GET)
+	public String findCustomerPost(HttpServletRequest request, HttpServletResponse response
+			){
+		Customer cust2=customerService.getById(2l);
+		System.out.println("Customer found="+cust2);
+		return "home";
 	}
 	
 }
