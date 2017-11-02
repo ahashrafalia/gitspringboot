@@ -24,7 +24,7 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public Customer getById(Serializable id) {
 
-		return null;
+		return customerRepository.getOne((long)id);
 	}
 
 	@Override

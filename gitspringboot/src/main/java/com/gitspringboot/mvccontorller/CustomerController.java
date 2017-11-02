@@ -1,6 +1,7 @@
 package com.gitspringboot.mvccontorller;
 
 
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,7 +18,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.gitspringboot.bean.CustomerBean;
 import com.gitspringboot.bean.OrderBean;
 import com.gitspringboot.model.Customer;
+import com.gitspringboot.model.Order;
 import com.gitspringboot.service.CustomerService;
+import com.gitspringboot.service.OrderService;
 
 import java.util.Map;
 
@@ -27,6 +30,10 @@ public class CustomerController {
 	
 	@Autowired
 	CustomerService customerService;
+	
+
+	@Autowired
+	OrderService orderService;
 
 	@RequestMapping(value="/addCustomer",method=RequestMethod.GET)
 	public String addCustomer(HttpServletRequest request, HttpServletResponse response,
@@ -52,6 +59,21 @@ public class CustomerController {
 		List<Customer> listCutomer=customerService.getAll();
 		Map<Long,String> mapCustomer= listCutomer.stream().collect(Collectors.toMap(Customer::getCustId, Customer::getFirstName));
 		model.addAttribute("mapCustomer",mapCustomer);
+		return "addOrder";
+	}
+	
+	@RequestMapping(value="/addOrder",method=RequestMethod.POST)
+	public String addOrderPost(HttpServletRequest request, HttpServletResponse response,
+			  @ModelAttribute("order") OrderBean orderBean){
+		Customer cust2=customerService.getById(orderBean.getCustId());
+		Order ord=new Order();
+		ord.setOrderDesc(orderBean.getOrderDesc());
+		ord.setOrderDt(new Date());
+		ord.setTotPrice(orderBean.getTotPrice());
+		ord.setUpdatedTime(new Date());
+		ord.setCustomer(cust2);
+		ord=orderService.save(ord);
+		System.out.println("Order added="+ord);
 		return "addOrder";
 	}
 	
