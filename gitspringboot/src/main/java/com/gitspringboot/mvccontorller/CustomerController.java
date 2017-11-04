@@ -45,7 +45,8 @@ public class CustomerController {
 	@RequestMapping(value="/addCustomer",method=RequestMethod.GET)
 	public String addCustomer(HttpServletRequest request, HttpServletResponse response,
 			  @ModelAttribute("customer") CustomerBean customerBean){
-		log.info("Add Customer is invoked");
+		log.info("Add Customer is invoked-info");
+		log.error("Add Customer is invoked-error");
 		return "addCustomer";
 	}
 	
