@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -29,6 +31,10 @@ import java.util.Map;
 @RequestMapping("/mvc/")
 public class CustomerController {
 	
+	private static final Logger log = LoggerFactory
+			.getLogger(CustomerController.class);
+
+	
 	@Autowired
 	CustomerService customerService;
 	
@@ -39,6 +45,7 @@ public class CustomerController {
 	@RequestMapping(value="/addCustomer",method=RequestMethod.GET)
 	public String addCustomer(HttpServletRequest request, HttpServletResponse response,
 			  @ModelAttribute("customer") CustomerBean customerBean){
+		log.info("Add Customer is invoked");
 		return "addCustomer";
 	}
 	
