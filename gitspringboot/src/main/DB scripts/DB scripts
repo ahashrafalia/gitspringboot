@@ -69,11 +69,23 @@ CREATE TABLE CERT_DETAILS
     CERT_ID integer NOT NULL  PRIMARY KEY,
     CERT_NAME  vARCHAR2(50) NOT NULL,
 	EXP_DATE DATE,
-	CONTRACT_NAME vARCHAR2(50) NOT NULL,
-	CONTRACT_EMAIL vARCHAR2(50) NOT NULL
+	CONTACT_NAME vARCHAR2(50) NOT NULL,
+	CONTACT_EMAIL vARCHAR2(50) NOT NULL,
+	CERT_STATUS VARCHAR2(50) NOT NULL
 );
 
-insert into   CERT_DETAILS(CERT_ID,CERT_NAME,EXP_DATE,CONTRACT_NAME,CONTRACT_EMAIL) values
+insert into   CERT_DETAILS(CERT_ID,CERT_NAME,EXP_DATE,CONTACT_NAME,CONTACT_EMAIL,CERT_STATUS) values
 (
-   CERT_SEQ.nextval,'CITI',TO_DATE('2003/MAY/03 21:02:44', 'yyyy/MON/dd hh24:mi:ss'),
-   'ashraf@gamil.com','hasan@gamil.com'); 
+   CERT_SEQ.nextval,'CITI',TO_DATE('2017/DEC/03 21:02:44', 'yyyy/MON/dd hh24:mi:ss'),
+   'ashraf@gamil.com','hasan@gamil.com','ABOUT_TO'); 
+insert into   CERT_DETAILS(CERT_ID,CERT_NAME,EXP_DATE,CONTACT_NAME,CONTACT_EMAIL,CERT_STATUS) values
+(
+   CERT_SEQ.nextval,'HDFC',TO_DATE('2018/MAY/03 21:02:44', 'yyyy/MON/dd hh24:mi:ss'),
+   'ilal@gamil.com','mji@gamil.com','NEW'); 
+insert into   CERT_DETAILS(CERT_ID,CERT_NAME,EXP_DATE,CONTACT_NAME,CONTACT_EMAIL,CERT_STATUS) values
+(
+   CERT_SEQ.nextval,'SBI',TO_DATE('2018/JAN/03 21:02:44', 'yyyy/MON/dd hh24:mi:ss'),
+   'anis@gamil.com','agu@gamil.com','ABOUT_TO');       
+   
+   
+   
