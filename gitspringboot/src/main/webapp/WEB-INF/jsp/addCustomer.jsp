@@ -11,7 +11,7 @@
 <form:form id="addCustomer" modelAttribute="customer" action="addCustomer" method="post">
 <table>
 	<tr><td colspan="2">Add Customer</td></tr>
-	<tr><td>FirstName</td><td><form:input path="firstName"/> </td></tr>
+	<tr><td>FirstName</td><td><form:input path="firstName"/> <td> <form:errors path="firstName" cssStyle="color: red;"/></td></td></tr>
 	<tr><td>LastName</td><td><form:input path="lastName"/> </td></tr>
 	<tr><td>Street</td><td><form:input path="street"/> </td></tr>
 	<tr><td colspan="2"><form:button value="Add Customer" >AddCustomer</form:button> </td></tr>
