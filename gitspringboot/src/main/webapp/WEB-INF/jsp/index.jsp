@@ -1,7 +1,7 @@
 <!DOCTYPE html >
 <html lang="en" ng-app="minmax">
 <head >
-	<title >Data Binding</title >
+	<title >Data Binding index</title >
 	<link href="${pageContext.request.contextPath}/angularlibs/bootstrap/dist/css/bootstrap.min.css"    rel="stylesheet" >
 	<link href="${pageContext.request.contextPath}/css/main.css"   rel="stylesheet" >
 </head >
@@ -24,13 +24,13 @@
 	<input type="text" class="form-control" ng-model="title"/>
 	<input type="checkbox" class="form-control" ng-model="awesome"/>
 
-<form >
+<form ng-submit="submitBtn()">
 		<div class="form-group" >
 			<label for="name" >Name</label >
 			<input type="text"
 			       class="form-control"
 			       ng-model="formModel.name";
-			       id="name" >
+			       id="name" required>
 		</div >
 
 		<div class="form-group" >
@@ -38,7 +38,7 @@
 			<input type="email"
 			       class="form-control"
 			       ng-model="formModel.email"
-			       id="email" >
+			       id="email" required>
 		</div >
 
 		<div class="form-group" >
@@ -46,11 +46,11 @@
 			<input type="password"
 			       class="form-control"
 			       ng-model="formModel.password"
-			       id="password" >
+			       id="password" required>
 		</div >
 
 		<div class="form-group" >
-			<button type="button" class="btn btn-primary" ng-click="submitBtn()">Register
+			<button type="submit" class="btn btn-primary" >Register
 			</button >
 		</div >
 <pre>{{formModel|json}}</pre>
