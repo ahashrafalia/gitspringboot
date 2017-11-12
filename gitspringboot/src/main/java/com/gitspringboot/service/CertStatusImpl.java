@@ -67,4 +67,10 @@ public class CertStatusImpl implements CertStatusService {
 		
 	}
 
+	@Override
+	public List<CertDetails> retrieveCertDetailsNintyDays() {
+		
+		return notifyRepository.retrieveCertDetailsNintyDays(schedulerProperties.getNintyDays());
+	}
+
 }
