@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.gitspringboot.aop.AuditLog;
+import com.gitspringboot.aop.AuditLogA;
 import com.gitspringboot.model.CertDetails;
 import com.gitspringboot.service.CertStatusService;
 
@@ -26,7 +26,7 @@ public class CertStatusController {
 	CertStatusService certStatusService;
 	
 	
-	@AuditLog
+	@AuditLogA
 	@RequestMapping(value="/dashboard/{param}",method=RequestMethod.GET)
 	public String runCertStatus(@PathVariable String param){
 		//List<CertDetails> listupdate =certStatusService.saveBatchUpdate(new ArrayList<CertDetails>());
@@ -37,7 +37,7 @@ public class CertStatusController {
 		List<CertDetails> list5=null;
 		
 		List<CertDetails> list90=certStatusService.retrieveCertDetailsNintyDays();
-		//list90.stream().filter(v->v.)
+		
 		LocalDate local60=LocalDate.now().plusDays(60);
 		LocalDate local30=LocalDate.now().plusDays(30);
 		LocalDate local15=LocalDate.now().plusDays(15);

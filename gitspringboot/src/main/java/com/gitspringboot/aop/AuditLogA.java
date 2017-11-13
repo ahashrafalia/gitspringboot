@@ -10,6 +10,6 @@ import org.springframework.stereotype.Component;
 @Component
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface AuditLog {
+public @interface AuditLogA {
 
 }
