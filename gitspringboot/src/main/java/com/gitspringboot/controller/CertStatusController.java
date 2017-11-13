@@ -59,6 +59,6 @@ public class CertStatusController {
 		System.out.println("list60 size="+list60.size()+"="+list60);
 		System.out.println("list30 size="+list30.size()+"="+list30);
 		System.out.println("list15 size="+list15.size()+"="+list15);
-		return "";
+		return "dashboard";
 	}
 }
