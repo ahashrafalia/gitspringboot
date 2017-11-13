@@ -9,9 +9,12 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import com.gitspringboot.aop.AuditLog;
 import com.gitspringboot.model.CertDetails;
 import com.gitspringboot.service.CertStatusService;
 
@@ -23,9 +26,9 @@ public class CertStatusController {
 	CertStatusService certStatusService;
 	
 	
-	
-	@RequestMapping(value="/dashboard",method=RequestMethod.GET)
-	public String runCertStatus(){
+	@AuditLog
+	@RequestMapping(value="/dashboard/{param}",method=RequestMethod.GET)
+	public String runCertStatus(@PathVariable String param){
 		//List<CertDetails> listupdate =certStatusService.saveBatchUpdate(new ArrayList<CertDetails>());
 		//System.out.println("listUpdated="+listupdate.size());
 		List<CertDetails> list60=null;
