@@ -101,3 +101,26 @@ CREATE TABLE AUDIT_LOG
 	MODIFIED_BY vARCHAR2(50),
 	MODIFIED_ON DATE
 );   
+
+
+
+CREATE TABLE users
+(
+    user_id integer NOT NULL  PRIMARY KEY,
+    username  VARCHAR2(50),
+	password VARCHAR2(50) 
+
+);
+insert into users(user_id,username,password)values(31,'client','client');
+insert into users(user_id,username,password)values(41,'tech','tech');
+insert into users(user_id,username,password)values(51,'cet','cet');
+
+CREATE TABLE userrole
+(
+    role_id integer NOT NULL  PRIMARY KEY,
+	user_id integer,
+    role  vARCHAR2(50)
+);
+insert into userrole(role_id,user_id,role)values(1,31,'ROLE_CLIENT');
+insert into userrole(role_id,user_id,role)values(2,41,'ROLE_TECH');
+insert into userrole(role_id,user_id,role)values(3,51,'ROLE_CET');
