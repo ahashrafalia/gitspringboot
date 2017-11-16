@@ -14,10 +14,13 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity(name="CertMaster")
 @Table(name="CERTMASTER")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "certId")
 public class CertMaster implements Serializable {
 
 
@@ -51,7 +54,7 @@ public class CertMaster implements Serializable {
     private String certStatus;
 	
 	@ManyToOne
-	@JsonManagedReference 
+	//@JsonBackReference 
 	@JoinColumn(name="CLIENT_ID")
 	private ClientMaster clientMaster;
 

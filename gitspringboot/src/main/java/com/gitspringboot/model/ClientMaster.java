@@ -16,11 +16,15 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators.PropertyGenerator;
 
 @Entity(name="ClientMaster")
 @Table(name="CLIENTMASTER")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "clientId")
 public class ClientMaster implements Serializable {
 
 
@@ -46,7 +50,7 @@ public class ClientMaster implements Serializable {
     private String status;
 	
 	//@JsonIgnore
-	@JsonBackReference 
+	//@JsonManagedReference 
 	@OneToMany(mappedBy="clientMaster",fetch=FetchType.EAGER,targetEntity=CertMaster.class,cascade = CascadeType.ALL)
 	private Collection<CertMaster> certMaster;
 
