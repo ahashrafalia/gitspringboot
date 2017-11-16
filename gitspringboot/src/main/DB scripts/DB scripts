@@ -124,3 +124,57 @@ CREATE TABLE userrole
 insert into userrole(role_id,user_id,role)values(1,31,'ROLE_CLIENT');
 insert into userrole(role_id,user_id,role)values(2,41,'ROLE_TECH');
 insert into userrole(role_id,user_id,role)values(3,51,'ROLE_CET');
+
+
+CREATE SEQUENCE clientMaster_seq
+  MINVALUE 1
+  MAXVALUE 9999999999
+  START WITH 1
+  INCREMENT BY 1; 
+  
+create table CLIENTMASTER(
+		CLIENT_ID numeric(10) not null,
+	CLIENT_NAME varchar2(30) not null,
+	STATUS varchar2(30) not null,
+	
+	CREATED_DATE DATE,
+	CONSTRAINT Client_pk PRIMARY KEY (CLIENT_ID)
+	);
+
+
+CREATE SEQUENCE certMaster_seq
+  MINVALUE 1
+  MAXVALUE 9999999999
+  START WITH 1
+  INCREMENT BY 1; 
+  
+create table CERTMASTER(
+		CERT_ID numeric(10) not null,
+		CLIENT_ID numeric(10),
+	CERT_NAME varchar2(30) not null,
+	CREATED_DATE DATE,
+	RENEWED_DATE DATE,
+	EXP_DATE DATE,
+	CERT_STATUS varchar2(30),
+	CONSTRAINT Cert_pk PRIMARY KEY (CERT_ID),
+	 CONSTRAINT fk_client_ID
+    FOREIGN KEY (CLIENT_ID)
+    REFERENCES CLIENTMASTER(CLIENT_ID)
+	);	
+insert into CLIENTMASTER(CLIENT_ID,CLIENT_NAME,STATUS,CREATED_DATE)
+	values(1,'Polaris','ACTIVE',sysdate);
+insert into CLIENTMASTER(CLIENT_ID,CLIENT_NAME,STATUS,CREATED_DATE)
+	values(2,'Virtusa','ACTIVE',sysdate);    
+	
+
+insert into CERTMASTER(CERT_ID,CLIENT_ID,CERT_NAME,CREATED_DATE,RENEWED_DATE,EXP_DATE,CERT_STATUS)
+values(1,1,'PolarisCert',sysdate,NULL,TO_DATE('20/JAN/2018', 'DD/MON/YYYY'),'NEW')    ;
+
+insert into CERTMASTER(CERT_ID,CLIENT_ID,CERT_NAME,CREATED_DATE,RENEWED_DATE,EXP_DATE,CERT_STATUS)
+values(2,1,'PolarisCertTwo',sysdate,NULL,TO_DATE('09/DEC/2017', 'DD/MON/YYYY'),'NEW');
+insert into CERTMASTER(CERT_ID,CLIENT_ID,CERT_NAME,CREATED_DATE,RENEWED_DATE,EXP_DATE,CERT_STATUS)
+values(3,2,'VirtusaCertOne',sysdate,NULL,TO_DATE('01/FEB/2018', 'DD/MON/YYYY'),'NEW')   ;
+
+insert into CERTMASTER(CERT_ID,CLIENT_ID,CERT_NAME,CREATED_DATE,RENEWED_DATE,EXP_DATE,CERT_STATUS)
+values(4,2,'VirtusaCertTwo',sysdate,NULL,TO_DATE('30/NOV/2017', 'DD/MON/YYYY'),'NEW')    ;    
+		
