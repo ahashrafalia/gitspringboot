@@ -1,6 +1,7 @@
 package com.gitspringboot.config;
 
 import com.gitspringboot.dao.UsersRepository;
+import com.gitspringboot.security.SimpleAuthenticationSuccessHandler;
 import com.gitspringboot.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -21,6 +22,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private CustomUserDetailsService userDetailsService;
+    
+    @Autowired
+    SimpleAuthenticationSuccessHandler successHandler;
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -38,7 +42,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("**/secured/**").authenticated()
                 .anyRequest().permitAll()
                 .and()
-                .formLogin().permitAll();
+                .formLogin().successHandler(successHandler).permitAll();
     }
 
     private PasswordEncoder getPasswordEncoder() {

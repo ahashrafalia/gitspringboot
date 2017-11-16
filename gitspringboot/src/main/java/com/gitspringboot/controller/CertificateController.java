@@ -13,7 +13,7 @@ import com.gitspringboot.model.ClientMaster;
 import com.gitspringboot.service.ClientMasterService;
 
 @RestController
-@RequestMapping("/rest/")
+@RequestMapping("/rest/secured/")
 public class CertificateController {
 	
 	@Autowired
@@ -26,7 +26,7 @@ public class CertificateController {
 		return "client";
 	}
 	
-	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
+	@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="clientDashboard",method=RequestMethod.GET)
 	public List<ClientMaster> clientDashboard(){
 		List<ClientMaster> list= clientMasterService.getAll();
