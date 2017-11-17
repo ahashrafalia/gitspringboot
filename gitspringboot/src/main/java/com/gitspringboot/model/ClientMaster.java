@@ -12,6 +12,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -54,6 +55,8 @@ public class ClientMaster implements Serializable {
 	@OneToMany(mappedBy="clientMaster",fetch=FetchType.EAGER,targetEntity=CertMaster.class,cascade = CascadeType.ALL)
 	private Collection<CertMaster> certMaster;
 
+	@OneToOne(mappedBy="clientMaster",cascade=CascadeType.ALL,fetch=FetchType.EAGER,targetEntity=ContactMaster.class)
+    private ContactMaster contactMaster;
 
 	public long getClientId() {
 		return clientId;
@@ -102,6 +105,16 @@ public class ClientMaster implements Serializable {
 
 	public void setCertMaster(Collection<CertMaster> certMaster) {
 		this.certMaster = certMaster;
+	}
+
+
+	public ContactMaster getContactMaster() {
+		return contactMaster;
+	}
+
+
+	public void setContactMaster(ContactMaster contactMaster) {
+		this.contactMaster = contactMaster;
 	}
 
 

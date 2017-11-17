@@ -119,7 +119,7 @@
             </div>
           </section>
 
-          <h2>Section title</h2>
+          <h2>Certificate Details</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>

@@ -178,3 +178,28 @@ values(3,2,'VirtusaCertOne',sysdate,NULL,TO_DATE('01/FEB/2018', 'DD/MON/YYYY'),'
 insert into CERTMASTER(CERT_ID,CLIENT_ID,CERT_NAME,CREATED_DATE,RENEWED_DATE,EXP_DATE,CERT_STATUS)
 values(4,2,'VirtusaCertTwo',sysdate,NULL,TO_DATE('30/NOV/2017', 'DD/MON/YYYY'),'NEW')    ;    
 		
+		
+create table CONTACTMASTER(
+		CONTACT_ID numeric(10) not null,
+		CLIENT_ID numeric(10),
+	FIRST_NAME varchar2(30) ,
+	LAST_NAME varchar2(30) ,
+	PHONE_NO varchar2(30) ,
+	EMAIL varchar2(30) ,
+	COUNTRY varchar2(30) ,
+	CREATED_DATE DATE,
+	
+	CONSTRAINT Contact_pk PRIMARY KEY (CONTACT_ID),
+	 CONSTRAINT fk_conclient_ID
+    FOREIGN KEY (CLIENT_ID)
+    REFERENCES CLIENTMASTER(CLIENT_ID)
+	);			
+	
+
+insert into CONTACTMASTER(CONTACT_ID,CLIENT_ID,FIRST_NAME,LAST_NAME,PHONE_NO,EMAIL,COUNTRY,CREATED_DATE)
+values
+(1,1,'Ashraf','Ali','33332433','ahaa@gmail.com','India',sysdate);
+
+insert into CONTACTMASTER(CONTACT_ID,CLIENT_ID,FIRST_NAME,LAST_NAME,PHONE_NO,EMAIL,COUNTRY,CREATED_DATE)
+values
+(2,2,'Ashraf','Ali','33332433','ahaa@gmail.com','India',sysdate);		

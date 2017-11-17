@@ -30,6 +30,7 @@ public class CertificateController {
 	@RequestMapping(value="clientDashboard",method=RequestMethod.GET)
 	public List<ClientMaster> clientDashboard(){
 		List<ClientMaster> list= clientMasterService.getAll();
+		
 		//System.out.println("list from controller="+list);
 		return list;
 	}
