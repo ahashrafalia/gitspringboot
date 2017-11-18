@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.gitspringboot.dao.CertMasterSpecification;
+import com.gitspringboot.dao.ClientMasterSpecification;
 import com.gitspringboot.model.CertMaster;
 import com.gitspringboot.model.ClientMaster;
 import com.gitspringboot.service.CertMasterService;
@@ -49,9 +50,18 @@ public class CertificateController {
 		filter.setCertName("Malabar");
 		Specification<CertMaster> spec = new CertMasterSpecification(filter);
 		List<CertMaster> list= certMasterService.findBySearch(spec);
-		
-		//System.out.println("certMasterlist from controller="+list);
 		return list;
+	}
+	
+	@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
+	@RequestMapping(value="clientSpec",method=RequestMethod.GET)
+	public List<ClientMaster> clientSpec(){
+				
+		
+		Specification<ClientMaster> spec=	ClientMasterSpecification.withDynamicQuery("Polaris");
+		List<ClientMaster> list= clientMasterService.findByClientName(spec);
+		return list;
+		
 	}
 	
 	
