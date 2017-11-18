@@ -3,6 +3,7 @@ package com.gitspringboot.model;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -15,6 +16,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
@@ -53,8 +55,9 @@ public class ClientMaster implements Serializable {
 	//@JsonIgnore
 	//@JsonManagedReference 
 	@OneToMany(mappedBy="clientMaster",fetch=FetchType.LAZY,targetEntity=CertMaster.class,cascade = CascadeType.ALL)
-	private Collection<CertMaster> certMaster;
+	private Set<CertMaster> certMaster;
 
+	  @Transient
 	@OneToOne(mappedBy="clientMaster",cascade=CascadeType.ALL,fetch=FetchType.LAZY,targetEntity=ContactMaster.class)
     private ContactMaster contactMaster;
 
@@ -98,12 +101,12 @@ public class ClientMaster implements Serializable {
 	}
 
 
-	public Collection<CertMaster> getCertMaster() {
+	public Set<CertMaster> getCertMaster() {
 		return certMaster;
 	}
 
 
-	public void setCertMaster(Collection<CertMaster> certMaster) {
+	public void setCertMaster(Set<CertMaster> certMaster) {
 		this.certMaster = certMaster;
 	}
 
@@ -118,11 +121,11 @@ public class ClientMaster implements Serializable {
 	}
 
 
-	@Override
+	/*@Override
 	public String toString() {
 		return "ClientMaster [clientId=" + clientId + ", clientName=" + clientName + ", createdDate=" + createdDate
 				+ ", status=" + status + ", certMaster=" + certMaster + "]";
-	}
+	}*/
 
 
 	

@@ -41,7 +41,7 @@ public class CertMasterServiceImpl implements CertMasterService {
 	}
 
 	@Override
-	public List<CertMaster> findBySearch(Specification<CertMaster> spec) {
+	public List<CertMaster> withDate(Specification<CertMaster> spec) {
 		return certMasterRepository.findAll(spec);
 		//return null;
 	}

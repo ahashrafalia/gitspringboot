@@ -49,6 +49,7 @@ public class CertMaster implements Serializable {
 	@Column(name = "CERT_STATUS", length = 50)
     private String certStatus;
 	
+	
 	@ManyToOne
 	//@JsonBackReference 
 	@JoinColumn(name="CLIENT_ID")
@@ -110,12 +111,12 @@ public class CertMaster implements Serializable {
 		this.clientMaster = clientMaster;
 	}
 
-	@Override
+	/*@Override
 	public String toString() {
 		return "CertMaster [certId=" + certId + ", certName=" + certName + ", createdDate=" + createdDate
 				+ ", renewedDate=" + renewedDate + ", expDate=" + expDate + ", certStatus=" + certStatus
 				+ ", clientMaster=" + clientMaster + "]";
-	}
+	}*/
 
 	
 	

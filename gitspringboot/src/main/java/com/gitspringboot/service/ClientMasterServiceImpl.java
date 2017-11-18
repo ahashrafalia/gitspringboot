@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import com.gitspringboot.dao.ClientMasterRepository;
@@ -37,6 +38,12 @@ public class ClientMasterServiceImpl implements ClientMasterService {
 	public void delete(Serializable id) {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public List<ClientMaster> findByClientName(Specification<ClientMaster> spec) {
+		// TODO Auto-generated method stub
+		return clientMasterRepository.findAll(spec);
 	}
 
 }

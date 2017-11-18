@@ -8,5 +8,5 @@ import com.gitspringboot.model.CertMaster;
 
 public interface CertMasterService extends ICRUDService<CertMaster> {
 
-	public List<CertMaster> findBySearch(Specification<CertMaster> spec);
+	public List<CertMaster> withDate(Specification<CertMaster> spec);
 }

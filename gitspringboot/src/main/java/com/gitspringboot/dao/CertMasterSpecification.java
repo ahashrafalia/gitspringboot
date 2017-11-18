@@ -1,5 +1,11 @@
 package com.gitspringboot.dao;
 
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.List;
+
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
@@ -8,34 +14,32 @@ import javax.persistence.criteria.Root;
 import org.springframework.data.jpa.domain.Specification;
 
 import com.gitspringboot.model.CertMaster;
+import com.gitspringboot.model.CertMaster_;
 
-public class CertMasterSpecification implements Specification<CertMaster>{
+public class CertMasterSpecification {
 
-	private CertMaster filter;
-
-    public CertMasterSpecification(CertMaster filter) {
-        super();
-        this.filter = filter;
-    }
+	
     
-	@Override
-	public Predicate toPredicate(Root<CertMaster> root, CriteriaQuery<?> query,
-			CriteriaBuilder cb) {
-		
-		 Predicate p = cb.disjunction();
+	public static Specification<CertMaster> withDate() {
+		return new Specification<CertMaster>() {
 
-	        if (filter.getCertName() != null) {
-	            p.getExpressions()
-	                    .add(cb.equal(root.get("certName"), filter.getCertName()));
-	        }
+			@Override
+			public Predicate toPredicate(Root<CertMaster> root, CriteriaQuery<?> query, CriteriaBuilder builder) {
+				List<Predicate> predicates = new ArrayList<Predicate>();
 
-	       /* if (filter.getSurname() != null && filter.getAge() != null) {
-	            p.getExpressions().add(
-	                    cb.and(cb.equal(root.get("surname"), filter.getSurname()),
-	                            cb.equal(root.get("age"), filter.getAge())));
-	        }*/
+				Calendar cal = new GregorianCalendar(2017, 11, 30);
+				
+				predicates.add(
+							builder.and(builder.lessThanOrEqualTo(root.get(CertMaster_.expDate), cal.getTime())));
+				
+				System.out.println("CertMasterSpecification predicates size"+predicates.size());
+				
+				
+				Predicate[] predicatesArray = new Predicate[predicates.size()];
+				return builder.and(predicates.toArray(predicatesArray));
+			}
 
-	        return p;
+		};
 	}
 
 }
