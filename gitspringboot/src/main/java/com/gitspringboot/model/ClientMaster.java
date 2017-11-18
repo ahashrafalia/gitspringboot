@@ -52,10 +52,10 @@ public class ClientMaster implements Serializable {
 	
 	//@JsonIgnore
 	//@JsonManagedReference 
-	@OneToMany(mappedBy="clientMaster",fetch=FetchType.EAGER,targetEntity=CertMaster.class,cascade = CascadeType.ALL)
+	@OneToMany(mappedBy="clientMaster",fetch=FetchType.LAZY,targetEntity=CertMaster.class,cascade = CascadeType.ALL)
 	private Collection<CertMaster> certMaster;
 
-	@OneToOne(mappedBy="clientMaster",cascade=CascadeType.ALL,fetch=FetchType.EAGER,targetEntity=ContactMaster.class)
+	@OneToOne(mappedBy="clientMaster",cascade=CascadeType.ALL,fetch=FetchType.LAZY,targetEntity=ContactMaster.class)
     private ContactMaster contactMaster;
 
 	public long getClientId() {
