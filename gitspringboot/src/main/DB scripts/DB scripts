@@ -257,3 +257,110 @@ values
 insert into CONTACTMASTER(CONTACT_ID,CLIENT_ID,FIRST_NAME,LAST_NAME,PHONE_NO,EMAIL,COUNTRY,CREATED_DATE)
 values
 (2,2,'Ashraf','Ali','33332433','ahaa@gmail.com','India',sysdate);		
+
+
+--Sample Package and procedure
+
+CREATE OR REPLACE PACKAGE GetEmpPckg IS
+
+-- Strongly Typed REF CURSOR
+-- A REF CURSOR that specifies a specific return type
+TYPE emp_ref_cursor IS REF CURSOR RETURN audit_log%ROWTYPE;
+--
+-- Weakly Typed
+-- A REF CURSOR that does not specify the return type such as SYS_REFCURSOR
+-- TYPE emp_ref_cursor IS REF CURSOR;
+PROCEDURE GetEmp
+  (p_dep  IN  audit_log.audit_id%TYPE,
+   p_ref  OUT emp_ref_cursor);
+END GetEmpPckg;
+
+
+create or replace PACKAGE BODY GetEmpPckg IS
+PROCEDURE GetEmp
+  (p_dep  IN  audit_log.audit_id%TYPE,
+   p_ref  OUT emp_ref_cursor) IS
+   BEGIN
+   OPEN p_ref FOR
+     SELECT audit_id, EVENT_NAME, FIELD_NAME,CURRENT_VALUE,MODIFIED_BY,MODIFIED_ON
+       FROM audit_log
+      WHERE audit_id = p_dep
+      ORDER BY EVENT_NAME;
+   END;
+END GetEmpPckg;
+
+--Inner join
+
+select T1.Client_ID,T1.CLIENT_NAME,T2.Cert_name,T2.Exp_date from
+ClientMaster T1 inner join  CertMaster T2
+on T1.CLIENT_ID=T2.CLIENT_ID
+where 
+--T1.CLIENT_ID=2
+--lower(T2.CERT_NAME) like '%vir%' and
+T2.EXP_DATE between to_date('30-Nov-17','dd-Mon-yy') and to_date('30-Dec-17','dd-Mon-yy')
+
+
+
+CREATE OR REPLACE PACKAGE GetCertPckg IS
+
+-- Strongly Typed REF CURSOR
+-- A REF CURSOR that specifies a specific return type
+TYPE cert_ref_cursor IS REF CURSOR RETURN CERTMASTER%ROWTYPE;
+--
+-- Weakly Typed
+-- A REF CURSOR that does not specify the return type such as SYS_REFCURSOR
+-- TYPE emp_ref_cursor IS REF CURSOR;
+PROCEDURE GetCertDetails
+  (pCertName  IN  CERTMASTER.CERT_name%TYPE,
+  pFmExp_date  IN  CERTMASTER.Exp_date%TYPE,
+  ptoExp_date  IN  CERTMASTER.Exp_date%TYPE,
+   p_ref  OUT cert_ref_cursor);
+END GetCertPckg;
+
+create or replace PACKAGE BODY GetCertPckg IS
+PROCEDURE GetCertDetails
+  (pCertName  IN  CERTMASTER.CERT_name%TYPE,
+  pFmExp_date  IN  CERTMASTER.Exp_date%TYPE,
+  ptoExp_date  IN  CERTMASTER.Exp_date%TYPE,
+   p_ref  OUT cert_ref_cursor)IS
+   BEGIN
+   OPEN p_ref FOR
+     SELECT cert_id, client_id, cert_NAME,created_date,renewed_date,exp_date,cert_status
+       FROM CERTMASTER
+      WHERE cert_NAME like '%'|| pCertName||'%' and
+      EXP_DATE between to_date(pFmExp_date,'dd-Mon-yy') and to_date(ptoExp_date,'dd-Mon-yy')
+      ORDER BY cert_NAME;
+   END;
+END GetCertPckg;
+
+
+--with Refcursor with joins
+
+CREATE OR REPLACE PACKAGE GetCertPckg2 IS
+
+ TYPE cert_ref_cursor IS REF CURSOR;
+PROCEDURE GetCertDetails2
+  (pCertName  IN  CERTMASTER.CERT_name%TYPE,
+  pFmExp_date  IN  CERTMASTER.Exp_date%TYPE,
+  ptoExp_date  IN  CERTMASTER.Exp_date%TYPE,
+   p_ref  OUT cert_ref_cursor);
+END GetCertPckg2;
+
+create or replace PACKAGE BODY GetCertPckg2 IS
+PROCEDURE GetCertDetails2
+  (pCertName  IN  CERTMASTER.CERT_name%TYPE,
+  pFmExp_date  IN  CERTMASTER.Exp_date%TYPE,
+  ptoExp_date  IN  CERTMASTER.Exp_date%TYPE,
+   p_ref  OUT cert_ref_cursor)IS
+   BEGIN
+   OPEN p_ref FOR
+     select T1.Client_ID,T1.CLIENT_NAME,T2.Cert_name,T2.Exp_date from
+ClientMaster T1 inner join  CertMaster T2
+on T1.CLIENT_ID=T2.CLIENT_ID
+      WHERE 
+      lower(T2.CERT_NAME) like '%'||pCertName||'%' and 
+T2.EXP_DATE between to_date(pFmExp_date,'dd-Mon-yy') and to_date(ptoExp_date,'dd-Mon-yy')
+
+      ORDER BY cert_NAME;
+   END;
+END GetCertPckg2;
