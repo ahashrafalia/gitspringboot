@@ -1,6 +1,7 @@
 package com.gitspringboot.service;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import com.gitspringboot.dao.ClientMasterRepository;
+import com.gitspringboot.model.CertMaster;
 import com.gitspringboot.model.ClientMaster;
 
 @Service
@@ -45,5 +47,7 @@ public class ClientMasterServiceImpl implements ClientMasterService {
 		// TODO Auto-generated method stub
 		return clientMasterRepository.findAll(spec);
 	}
+
+	
 
 }

@@ -45,10 +45,10 @@ public class TestDB {
 	     
 	     System.out.println("--------------------");
 	    // callPackage();
-	  //callPackage2();
-	  callPackage3();
+	  callPackage2();
+	  //callPackage3();//with joins
 	   }
-	public static void callPackage3(){
+	public static void callPackage3(){ //
 		Connection conn = null;
 		CallableStatement stmt = null;
 		ResultSet rset = null;

@@ -1,5 +1,7 @@
 package com.gitspringboot.controller;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,10 +48,17 @@ public class CertificateController {
 	@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="certSpec",method=RequestMethod.GET)
 	public List<CertMaster> certSpec(){
-		//CertMaster filter=new CertMaster();
-		//filter.setCertName("Malabar");
+		
 		Specification<CertMaster> spec = CertMasterSpecification.withDate();
 		List<CertMaster> list= certMasterService.withDate(spec);
+		return list;
+	}
+	
+	@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
+	@RequestMapping(value="certSearch",method=RequestMethod.GET)
+	public List<CertMaster> certSearch(){
+		
+		List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
 		return list;
 	}
 	
