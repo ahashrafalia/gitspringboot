@@ -2,7 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>  
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="certHomeClient">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -127,33 +127,45 @@
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
+                  <th>Cert Id</th>
+                  <th>Client ID</th>
+                  <th>Cert Name</th>
+                  <th>Cert Date</th>
+                   <th>Renewed Date</th>
+                   <th>Exp Date</th> 
+                   <th>Cert Status</th> 
                 </tr>
               </thead>
               <tbody>
                 <tr>
+                <td>Slno</td>
                   <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
+                  <td>Client id</td>
+                  <td>Cert name</td>
+                  <td>Cert date</td>
+                  <td>Renow date</td>
+                  <td>Exp date</td>
+                  <td>Status</td>
                 </tr>
                 <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
+                  <td>Slno</td>
+                  <td>1,001</td>
+                  <td>Client id</td>
+                  <td>Cert name</td>
+                  <td>Cert date</td>
+                  <td>Renow date</td>
+                  <td>Exp date</td>
+                  <td>Status</td>
                 </tr>
                 <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
+                  <td>Slno</td>
+                  <td>1,001</td>
+                  <td>Client id</td>
+                  <td>Cert name</td>
+                  <td>Cert date</td>
+                  <td>Renow date</td>
+                  <td>Exp date</td>
+                  <td>Status</td>
                 </tr>
               </tbody>
             </table>

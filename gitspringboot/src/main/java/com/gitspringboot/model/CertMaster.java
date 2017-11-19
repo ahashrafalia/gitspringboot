@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.NamedStoredProcedureQueries;
 import javax.persistence.NamedStoredProcedureQuery;
 import javax.persistence.StoredProcedureParameter;
 import javax.persistence.ParameterMode;
@@ -25,7 +26,8 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 @Entity(name="CertMaster")
 @Table(name="CERTMASTER")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "certId")
-@NamedStoredProcedureQuery(
+@NamedStoredProcedureQueries({
+	@NamedStoredProcedureQuery(
 		name = "GetCertDetails", 
 		procedureName = "root.GetCertPckg.GetCertDetails", 
 		parameters = {
@@ -35,7 +37,16 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 				@StoredProcedureParameter(mode = ParameterMode.REF_CURSOR, type = void.class), 
 			
 		}
-	)
+	),
+	@NamedStoredProcedureQuery(
+			name = "GetAllCertDetails", 
+			procedureName = "root.GetCertPckg.GetAllCertDetails", 
+			parameters = {
+				@StoredProcedureParameter(mode = ParameterMode.REF_CURSOR, type = void.class), 
+				
+			}
+		)
+})
 public class CertMaster implements Serializable {
 
 	private static final long serialVersionUID = 1L;

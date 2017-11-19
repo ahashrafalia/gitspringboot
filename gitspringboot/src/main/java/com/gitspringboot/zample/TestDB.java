@@ -87,13 +87,13 @@ public class TestDB {
 
 		try {
 		        conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "root", "root");
-		        stmt = conn.prepareCall("{call   root.GetCertPckg.GetCertDetails(?,?,?,?)}");//We have declared this at the very top
-		        stmt.setString(1, "vir");//Passing CompanyID here
-		        stmt.setString(2, "30-Nov-17");
-		        stmt.setString(3, "31-Dec-17");
-		        stmt.registerOutParameter(4, OracleTypes.CURSOR);//Refcursor selects the row based upon query results provided in Package.
+		        stmt = conn.prepareCall("{call   root.GetCertPckg.GetAllCertDetails(?)}");//We have declared this at the very top
+		        //stmt.setString(1, "vir");//Passing CompanyID here
+		        //stmt.setString(2, "30-Nov-17");
+		        //stmt.setString(3, "31-Dec-17");
+		        stmt.registerOutParameter(1, OracleTypes.CURSOR);//Refcursor selects the row based upon query results provided in Package.
 		        stmt.execute();
-		        rset = (ResultSet) stmt.getObject(4);
+		        rset = (ResultSet) stmt.getObject(1);
 
 		        while (rset.next()) {
 		            String orgId=rset.getString("cert_NAME"); 

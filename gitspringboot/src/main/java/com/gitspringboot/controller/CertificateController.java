@@ -54,11 +54,12 @@ public class CertificateController {
 		return list;
 	}
 	
-	@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
+	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="certSearch",method=RequestMethod.GET)
 	public List<CertMaster> certSearch(){
 		
-		List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
+		//List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
+		List<CertMaster> list=certMasterService.getAllCertViaProcedure();
 		return list;
 	}
 	

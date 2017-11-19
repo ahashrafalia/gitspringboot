@@ -364,3 +364,36 @@ T2.EXP_DATE between to_date(pFmExp_date,'dd-Mon-yy') and to_date(ptoExp_date,'dd
       ORDER BY cert_NAME;
    END;
 END GetCertPckg2;
+
+
+
+CREATE OR REPLACE PACKAGE GetCertPckg IS
+
+-- Strongly Typed REF CURSOR
+-- A REF CURSOR that specifies a specific return type
+TYPE cert_ref_cursor IS REF CURSOR RETURN CERTMASTER%ROWTYPE;
+--
+-- Weakly Typed
+-- A REF CURSOR that does not specify the return type such as SYS_REFCURSOR
+-- TYPE emp_ref_cursor IS REF CURSOR;
+PROCEDURE GetAllCertDetails
+  (pCertName  IN  CERTMASTER.CERT_name%TYPE,
+  pFmExp_date  IN  CERTMASTER.Exp_date%TYPE,
+  ptoExp_date  IN  CERTMASTER.Exp_date%TYPE,
+   p_ref  OUT cert_ref_cursor);
+END GetCertPckg;
+
+create or replace PACKAGE BODY GetCertPckg IS
+PROCEDURE GetAllCertDetails
+  (pCertName  IN  CERTMASTER.CERT_name%TYPE,
+  pFmExp_date  IN  CERTMASTER.Exp_date%TYPE,
+  ptoExp_date  IN  CERTMASTER.Exp_date%TYPE,
+   p_ref  OUT cert_ref_cursor)IS
+   BEGIN
+   OPEN p_ref FOR
+     SELECT cert_id, client_id, cert_NAME,created_date,renewed_date,exp_date,cert_status
+       FROM CERTMASTER
+      
+      ORDER BY cert_NAME;
+   END;
+END GetCertPckg;

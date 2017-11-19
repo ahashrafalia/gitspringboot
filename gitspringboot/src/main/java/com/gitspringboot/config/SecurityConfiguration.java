@@ -39,7 +39,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         http.csrf().disable();
         http.authorizeRequests()
-                .antMatchers("**/secured/**").authenticated()
+                .antMatchers("**/securedd/**").authenticated() //for temp purpost-Ahaatodo
                 .anyRequest().permitAll()
                 .and()
                 .formLogin().successHandler(successHandler).permitAll();

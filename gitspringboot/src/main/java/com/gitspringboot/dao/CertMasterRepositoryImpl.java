@@ -26,4 +26,11 @@ public class CertMasterRepositoryImpl implements CertMasterRepositoryCustom {
 		return listCert;
 	}
 
+	@Override
+	public List<CertMaster> getAllCertViaProcedure() {
+		StoredProcedureQuery q =this.entityManager.createNamedStoredProcedureQuery("GetAllCertDetails");
+		List<CertMaster> listCert = q.getResultList();
+		return listCert;
+	}
+
 }

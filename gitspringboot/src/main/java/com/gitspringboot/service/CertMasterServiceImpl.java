@@ -54,4 +54,9 @@ public class CertMasterServiceImpl implements CertMasterService {
 		return certMasterRepository.searchCertViaProcedure(s1, d1, d2);
 	}
 
+	@Override
+	public List<CertMaster> getAllCertViaProcedure() {
+		return certMasterRepository.getAllCertViaProcedure();
+	}
+
 }
