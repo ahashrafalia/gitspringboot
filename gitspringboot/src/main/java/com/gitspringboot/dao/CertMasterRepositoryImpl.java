@@ -33,4 +33,10 @@ public class CertMasterRepositoryImpl implements CertMasterRepositoryCustom {
 		return listCert;
 	}
 
+	/*@Override
+	public List<CertMaster> getCertCountClient(Date d1, Date d2) {
+		
+		return null;
+	}*/
+
 }

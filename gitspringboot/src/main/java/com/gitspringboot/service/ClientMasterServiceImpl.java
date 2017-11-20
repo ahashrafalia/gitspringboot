@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import com.gitspringboot.config.SchedulerProperties;
 import com.gitspringboot.dao.ClientMasterRepository;
 import com.gitspringboot.model.CertMaster;
 import com.gitspringboot.model.ClientMaster;
@@ -17,6 +18,9 @@ public class ClientMasterServiceImpl implements ClientMasterService {
 
 	@Autowired
 	ClientMasterRepository clientMasterRepository;
+	
+	@Autowired
+	SchedulerProperties schedulerProperties;
 	
 	@Override
 	public ClientMaster save(ClientMaster entity) {

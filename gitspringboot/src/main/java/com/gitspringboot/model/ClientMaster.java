@@ -27,7 +27,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators.PropertyGenerator;
 
 @Entity(name="ClientMaster")
 @Table(name="CLIENTMASTER")
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "clientId")
+//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "clientId")
 public class ClientMaster implements Serializable {
 
 
@@ -53,7 +53,7 @@ public class ClientMaster implements Serializable {
     private String status;
 	
 	//@JsonIgnore
-	//@JsonManagedReference 
+	@JsonManagedReference 
 	@OneToMany(mappedBy="clientMaster",fetch=FetchType.LAZY,targetEntity=CertMaster.class,cascade = CascadeType.ALL)
 	private Set<CertMaster> certMaster;
 

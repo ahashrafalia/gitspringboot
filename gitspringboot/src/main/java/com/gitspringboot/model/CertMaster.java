@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.NamedStoredProcedureQueries;
@@ -25,7 +26,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity(name="CertMaster")
 @Table(name="CERTMASTER")
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "certId")
+//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "certId")
 @NamedStoredProcedureQueries({
 	@NamedStoredProcedureQuery(
 		name = "GetCertDetails", 
@@ -47,6 +48,9 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 			}
 		)
 })
+@NamedQuery(name = "CertMaster.certCountClientBy90",
+	query = "SELECT e from CertMaster e WHERE e.expDate Between :startDate AND :endDate"
+)
 public class CertMaster implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -77,7 +81,7 @@ public class CertMaster implements Serializable {
 	
 	
 	@ManyToOne
-	//@JsonBackReference 
+	@JsonBackReference 
 	@JoinColumn(name="CLIENT_ID")
 	private ClientMaster clientMaster;
 
@@ -137,12 +141,11 @@ public class CertMaster implements Serializable {
 		this.clientMaster = clientMaster;
 	}
 
-	/*@Override
+	@Override
 	public String toString() {
-		return "CertMaster [certId=" + certId + ", certName=" + certName + ", createdDate=" + createdDate
-				+ ", renewedDate=" + renewedDate + ", expDate=" + expDate + ", certStatus=" + certStatus
-				+ ", clientMaster=" + clientMaster + "]";
-	}*/
+		return "CertMaster [certId=" + certId + ", certName=" + certName + ", expDate=" + expDate + ", certStatus=" + certStatus
+				+ "]";
+	}
 
 	
 	

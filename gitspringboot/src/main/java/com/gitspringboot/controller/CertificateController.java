@@ -1,8 +1,14 @@
 package com.gitspringboot.controller;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
@@ -11,6 +17,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.annotation.SessionScope;
 
 import com.gitspringboot.dao.CertMasterSpecification;
 import com.gitspringboot.dao.ClientMasterSpecification;
@@ -28,6 +35,8 @@ public class CertificateController {
 	
 	@Autowired
 	CertMasterService certMasterService;
+	
+	
 
 	 //@PreAuthorize("hasRole('ROLE_CLIENT') AND hasRole('ROLE_TECH')")
 	@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
@@ -61,6 +70,44 @@ public class CertificateController {
 		//List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
 		List<CertMaster> list=certMasterService.getAllCertViaProcedure();
 		return list;
+	}
+	
+	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
+	@RequestMapping(value="certCountClient",method=RequestMethod.GET)
+	public Map<String,Object> certCountClient(){
+		
+		//List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
+		LocalDate local90=LocalDate.now().plusDays(91);
+		LocalDate local60=LocalDate.now().plusDays(61);
+		LocalDate local30=LocalDate.now().plusDays(31);
+		LocalDate local15=LocalDate.now().plusDays(16);
+		
+		Date date90 = Date.from(local90.atStartOfDay(ZoneId.systemDefault()).toInstant());
+		Date date60 = Date.from(local60.atStartOfDay(ZoneId.systemDefault()).toInstant());
+		Date date30 = Date.from(local30.atStartOfDay(ZoneId.systemDefault()).toInstant());
+		Date date15 = Date.from(local15.atStartOfDay(ZoneId.systemDefault()).toInstant());
+		
+		
+		List<CertMaster> list=certMasterService.getCertCountClient();
+		List<CertMaster> list60_90=list.stream().filter(v->v.getExpDate().after(date60)&& v.getExpDate().before(date90)).collect(Collectors.toList());
+		List<CertMaster> list30_60=list.stream().filter(v->v.getExpDate().after(date30)&& v.getExpDate().before(date60)).collect(Collectors.toList());
+		List<CertMaster> list15_30=list.stream().filter(v->v.getExpDate().after(date15)&& v.getExpDate().before(date30)).collect(Collectors.toList());
+		List<CertMaster> list_15=list.stream().filter(v->v.getExpDate().before(date15)).collect(Collectors.toList());
+		
+		System.out.println("list60_90 size="+list60_90.size()+","+list60_90);
+		System.out.println("list30_60 size="+list30_60.size()+","+list30_60);
+		System.out.println("list15_30 size="+list15_30.size()+","+list15_30);
+		System.out.println("list15 size="+list_15.size()+","+list_15);
+		Map<String,Object> certCountMap=new LinkedHashMap<String,Object>();
+		certCountMap.put("good",String.valueOf(list60_90.size()));
+		certCountMap.put("safe",String.valueOf( list30_60.size()));
+		certCountMap.put("warn", String.valueOf(list15_30.size()));
+		certCountMap.put("risk", String.valueOf(list_15.size()));
+		certCountMap.put("goodlist",list60_90);
+		certCountMap.put("safelist",list30_60);
+		certCountMap.put("warnlist",list15_30);
+		certCountMap.put("risklist",list_15);
+		return certCountMap;
 	}
 	
 	@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
