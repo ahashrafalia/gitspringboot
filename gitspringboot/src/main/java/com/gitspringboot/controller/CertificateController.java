@@ -16,6 +16,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -66,14 +68,34 @@ public class CertificateController {
 	}
 	
 	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
-	@RequestMapping(value="certSearch",method=RequestMethod.GET)
-	public ResponseEntity<List<CertMaster>> certSearch(){
+	@RequestMapping(value="cert",method=RequestMethod.GET)
+	public ResponseEntity<List<CertMaster>> cert(){
 		
 		//List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
 		List<CertMaster> list=certMasterService.getAllCertViaProcedure();
 		return new ResponseEntity<>(list, HttpStatus.OK);
 		//return (ResponseEntity<List<CertMaster>>)list;
 	}
+   
+	
+	@RequestMapping(value = "/cert/{id}", method = RequestMethod.PUT)
+	public ResponseEntity<CertMaster> updateUser(@PathVariable("id") long id, @RequestBody CertMaster certMaster) {
+        System.out.println("Updating certi " + id);
+          
+        CertMaster dbcertMaster = certMasterService.getById(id);
+          
+        if (dbcertMaster==null) {
+            System.out.println("certificate with id " + id + " not found");
+            return new ResponseEntity<CertMaster>(HttpStatus.NOT_FOUND);
+        }
+  
+        dbcertMaster.setCertName(certMaster.getCertName());
+        dbcertMaster.setCertStatus(certMaster.getCertStatus());
+        
+        certMasterService.save(dbcertMaster);
+        
+        return new ResponseEntity<CertMaster>(dbcertMaster, HttpStatus.OK);
+    }
 	
 	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="certCountClient",method=RequestMethod.GET)

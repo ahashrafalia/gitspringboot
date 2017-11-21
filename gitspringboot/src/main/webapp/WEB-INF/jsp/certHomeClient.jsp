@@ -108,22 +108,22 @@
           <section class="row text-center placeholders">
          
             <div class="col-6 col-sm-3 placeholder thumbnail text-center">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
               <h4>Label1</h4>
-              <div class="text-muted caption"><span style="font-size:160%;color:White;">Something else</span></div>
+              <div class="text-muted caption"><span style="font-size:100%;color:White;">Something else</span></div>
             </div>
             <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
               <h4>Label</h4>
               <span class="text-muted">Something else</span>
             </div>
             <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
               <h4>Label</h4>
               <span class="text-muted">Something else</span>
             </div>
             <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
               <h4>Label</h4>
               <span class="text-muted">Something else</span>
             </div>
@@ -141,6 +141,8 @@
                    <th>Renewed Date</th>
                    <th>Exp Date</th> 
                    <th>Cert Status</th> 
+                   <th width="100">Edit</th>
+                   <th width="100">Remove</th>
                 </tr>
               </thead>
               <tbody>
@@ -148,10 +150,16 @@
                 <td>{{$index+1}}}</td>
                   <td><span ng-bind="cert.certId"></span></td>
                   <td><span ng-bind="cert.certName"></span></td>
-                  <td><span ng-bind="cert.createdDate"></span></td>
+                  <td><span ng-bind="cert.createdDate |date:'dd-MMM-yyyy'"></span></td>
                   <td><span ng-bind="cert.renewedDate"></span></td>
-                  <td><span ng-bind="cert.expDate"></span></td>
+                  <td><span ng-bind="cert.expDate |date:'dd-MMM-yyyy'"></span></td>
                   <td><span ng-bind="cert.certStatus"></span></td>
+                  <td>
+                    <button type="button" ng-click="ctrl.edit(cert.certId)" class="btn btn-success custom-width">Edit</button>
+                  </td>
+                  <td>    
+                    <button type="button" ng-click="ctrl.remove(cert.certId)" class="btn btn-danger custom-width">Remove</button>
+                  </td>
                 </tr>
                 
               </tbody>
