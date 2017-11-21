@@ -92,7 +92,8 @@ public class CertificateController {
         dbcertMaster.setCertName(certMaster.getCertName());
         dbcertMaster.setCertStatus(certMaster.getCertStatus());
         
-        certMasterService.save(dbcertMaster);
+        CertMaster updated=certMasterService.save(dbcertMaster);
+        System.out.println("updated="+updated);
         
         return new ResponseEntity<CertMaster>(dbcertMaster, HttpStatus.OK);
     }

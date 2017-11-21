@@ -26,7 +26,7 @@ public class CertMasterServiceImpl implements CertMasterService {
 	@Override
 	public CertMaster save(CertMaster entity) {
 		// TODO Auto-generated method stub
-		return null;
+		return certMasterRepository.save(entity);
 	}
 
 	@Override

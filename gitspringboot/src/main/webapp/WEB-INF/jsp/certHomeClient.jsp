@@ -17,14 +17,34 @@
     <link href="${pageContext.request.contextPath}/angularlibs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="${pageContext.request.contextPath}/angularlibs/bootstrap/dist/js/bootstrap.min.js"></script> 
+   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   
     <link href="${pageContext.request.contextPath}/css/dashboard.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-resource.js"></script>
-    <%-- <script src="${pageContext.request.contextPath}/js/ang15/angular.js"></script> 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-resource.js"></script> -->
+    <script src="${pageContext.request.contextPath}/js/ang15/angular.js"></script> 
     <script src="${pageContext.request.contextPath}/js/ang15/angular-resource.js"></script> 
-     --%><script src="${pageContext.request.contextPath}/js/certHomeClient.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <script src="${pageContext.request.contextPath}/js/certHomeClient.js"></script>
     <script src="${pageContext.request.contextPath}/js/certHomeClientService.js"></script>
     <script src="${pageContext.request.contextPath}/js/certHomeClientController.js"></script>
+    <script>
+	$(document).ready(function(){
+		var date_input=$('input[name="date"]'); //our date input has the name "date"
+		var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		date_input.datepicker({
+			format: 'mm/dd/yyyy',
+			container: container,
+			todayHighlight: true,
+			autoclose: true,
+		})
+	})
+</script>
   </head>
 
   <body>
@@ -128,6 +148,63 @@
               <span class="text-muted">Something else</span>
             </div>
           </section>
+          
+          
+          <h2>Certificate Form </h2>
+              <div class="formcontainer">
+                  <form ng-submit="ctrl.submit()" name="myForm" class="form-horizontal">
+                      <input type="hidden" ng-model="ctrl.user.id" />
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="uname">Cert Name</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="ctrl.cert.certName" id="uname" class="username form-control input-sm" placeholder="Enter Cert name" required ng-minlength="3"/>
+                                  <div class="has-error" ng-show="myForm.$dirty">
+                                      <span ng-show="myForm.uname.$error.required">This is a required field</span>
+                                      <span ng-show="myForm.uname.$error.minlength">Minimum length required is 3</span>
+                                      <span ng-show="myForm.uname.$invalid">This field is invalid </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                        
+                      
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="address">Expiary Date</label>
+                              <div class="col-md-7">
+                              <div class='input-group date' id='datetimepicker1'>
+				                    <input type='text' ng-model="ctrl.cert.expDate" class="form-control input-sm" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+				                </div>
+				                
+				                </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="email">CertStatus</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="ctrl.cert.certStatus" id="email" class="email form-control input-sm" placeholder="Enter your Email" required/>
+                                  <div class="has-error" ng-show="myForm.$dirty">
+                                      <span ng-show="myForm.email.$error.required">This is a required field</span>
+                                      <span ng-show="myForm.email.$invalid">This field is invalid </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="form-actions floatRight">
+                              <input type="submit"  value="{{!ctrl.cert.certId ? 'Add' : 'Update'}}" class="btn btn-primary btn-sm" ng-disabled="myForm.$invalid">
+                              <button type="button" ng-click="ctrl.reset()" class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset Form</button>
+                          </div>
+                      </div>
+                      <pre>{{myForm|json}}</pre> 
+                  </form>
+              </div>
+          </div>
+          
 
           <h2>Certificate Details</h2>
           <div class="table-responsive">
@@ -172,11 +249,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="${pageContext.request.contextPath}/angularlibs/bootstrap/dist/js/bootstrap.min.js"></script> 
-   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-   
+    
   </body>
 </html>
