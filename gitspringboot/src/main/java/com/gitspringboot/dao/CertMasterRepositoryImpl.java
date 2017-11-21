@@ -22,7 +22,7 @@ public class CertMasterRepositoryImpl implements CertMasterRepositoryCustom {
 		q.setParameter(1, s1);
 		q.setParameter(2, d1);
 		q.setParameter(3, d2);
-		List<CertMaster> listCert = q.getResultList();
+		List<CertMaster> listCert = (List<CertMaster>)q.getResultList();
 		return listCert;
 	}
 

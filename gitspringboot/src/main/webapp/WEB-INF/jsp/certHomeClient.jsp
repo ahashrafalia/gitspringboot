@@ -2,8 +2,9 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>  
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <!DOCTYPE html>
-<html lang="en" ng-app="certHomeClient">
+<html lang="en" ng-app="certHomeClient" ng-controller="certHomeClientCtrl as ctrl">
   <head>
+  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -17,6 +18,13 @@
 
     <!-- Custom styles for this template -->
     <link href="${pageContext.request.contextPath}/css/dashboard.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-resource.js"></script>
+    <%-- <script src="${pageContext.request.contextPath}/js/ang15/angular.js"></script> 
+    <script src="${pageContext.request.contextPath}/js/ang15/angular-resource.js"></script> 
+     --%><script src="${pageContext.request.contextPath}/js/certHomeClient.js"></script>
+    <script src="${pageContext.request.contextPath}/js/certHomeClientService.js"></script>
+    <script src="${pageContext.request.contextPath}/js/certHomeClientController.js"></script>
   </head>
 
   <body>
@@ -128,45 +136,24 @@
                 <tr>
                   <th>#</th>
                   <th>Cert Id</th>
-                  <th>Client ID</th>
                   <th>Cert Name</th>
-                  <th>Cert Date</th>
+                  <th>Created Date</th>
                    <th>Renewed Date</th>
                    <th>Exp Date</th> 
                    <th>Cert Status</th> 
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                <td>Slno</td>
-                  <td>1,001</td>
-                  <td>Client id</td>
-                  <td>Cert name</td>
-                  <td>Cert date</td>
-                  <td>Renow date</td>
-                  <td>Exp date</td>
-                  <td>Status</td>
+                <tr ng-repeat="cert in ctrl.certs">
+                <td>{{$index+1}}}</td>
+                  <td><span ng-bind="cert.certId"></span></td>
+                  <td><span ng-bind="cert.certName"></span></td>
+                  <td><span ng-bind="cert.createdDate"></span></td>
+                  <td><span ng-bind="cert.renewedDate"></span></td>
+                  <td><span ng-bind="cert.expDate"></span></td>
+                  <td><span ng-bind="cert.certStatus"></span></td>
                 </tr>
-                <tr>
-                  <td>Slno</td>
-                  <td>1,001</td>
-                  <td>Client id</td>
-                  <td>Cert name</td>
-                  <td>Cert date</td>
-                  <td>Renow date</td>
-                  <td>Exp date</td>
-                  <td>Status</td>
-                </tr>
-                <tr>
-                  <td>Slno</td>
-                  <td>1,001</td>
-                  <td>Client id</td>
-                  <td>Cert name</td>
-                  <td>Cert date</td>
-                  <td>Renow date</td>
-                  <td>Exp date</td>
-                  <td>Status</td>
-                </tr>
+                
               </tbody>
             </table>
           </div>
@@ -177,11 +164,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="${pageContext.request.contextPath}/angularlibs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="${pageContext.request.contextPath}/angularlibs/bootstrap/dist/js/bootstrap.min.js"></script> 
+   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
    
   </body>
 </html>

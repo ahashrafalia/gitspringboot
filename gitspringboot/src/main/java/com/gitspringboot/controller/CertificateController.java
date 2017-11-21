@@ -12,6 +12,8 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -54,7 +56,7 @@ public class CertificateController {
 		return list;
 	}
 	
-	@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
+	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="certSpec",method=RequestMethod.GET)
 	public List<CertMaster> certSpec(){
 		
@@ -65,11 +67,12 @@ public class CertificateController {
 	
 	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="certSearch",method=RequestMethod.GET)
-	public List<CertMaster> certSearch(){
+	public ResponseEntity<List<CertMaster>> certSearch(){
 		
 		//List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
 		List<CertMaster> list=certMasterService.getAllCertViaProcedure();
-		return list;
+		return new ResponseEntity<>(list, HttpStatus.OK);
+		//return (ResponseEntity<List<CertMaster>>)list;
 	}
 	
 	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
@@ -98,7 +101,7 @@ public class CertificateController {
 		System.out.println("list30_60 size="+list30_60.size()+","+list30_60);
 		System.out.println("list15_30 size="+list15_30.size()+","+list15_30);
 		System.out.println("list15 size="+list_15.size()+","+list_15);
-		Map<String,Object> certCountMap=new LinkedHashMap<String,Object>();
+		Map<String,Object> certCountMap=new LinkedHashMap<>();
 		certCountMap.put("good",String.valueOf(list60_90.size()));
 		certCountMap.put("safe",String.valueOf( list30_60.size()));
 		certCountMap.put("warn", String.valueOf(list15_30.size()));

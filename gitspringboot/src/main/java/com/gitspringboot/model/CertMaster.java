@@ -31,6 +31,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 	@NamedStoredProcedureQuery(
 		name = "GetCertDetails", 
 		procedureName = "root.GetCertPckg.GetCertDetails", 
+		resultClasses=CertMaster.class,
 		parameters = {
 				@StoredProcedureParameter(mode = ParameterMode.IN, type = String.class),
 				@StoredProcedureParameter(mode = ParameterMode.IN, type = String.class),
@@ -41,7 +42,8 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 	),
 	@NamedStoredProcedureQuery(
 			name = "GetAllCertDetails", 
-			procedureName = "root.GetCertPckg.GetAllCertDetails", 
+			procedureName = "root.GetCertPckg.GetAllCertDetails",
+			resultClasses=CertMaster.class,
 			parameters = {
 				@StoredProcedureParameter(mode = ParameterMode.REF_CURSOR, type = void.class), 
 				
