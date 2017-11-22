@@ -12,7 +12,7 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupServi
 	
 	 self.updateUser = function(){
          self.cert.$update(function(){
-             self.fetchAllUsers();
+             self.fetchAllCerts();
          });
      };
 	
@@ -29,7 +29,24 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupServi
             }
         }
     };
-    
+    self.remove = function(id){
+        console.log('id to be deleted', id);
+        if(self.cert.certId === id) {//If it is the one shown on screen, reset screen
+           self.reset();
+        }
+        self.deleteUser(id);
+        //self.cert.delete_user(id);
+    };
+    self.deleteUser = function(identity){
+        var cert = CertHomeFactory.get({id:identity}, function() {
+        	console.log("delete cert="+cert);
+             cert.$delete_user(function(){
+                 console.log('Deleting cert with id ', identity);
+                 self.fetchAllCerts();
+             });
+        });
+     };
+
     self.submit = function() {
         if(self.cert.certId==null){
             console.log('Saving New cert', self.cert);    
@@ -49,9 +66,9 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupServi
     };
       
      
-     self.remove = function(id){
+    /* self.remove = function(id){
          console.log('id to be removed', id);
          popupService.showPopup('Really delete this?');
-     };
+     };*/
          
 }]);

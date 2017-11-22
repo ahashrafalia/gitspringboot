@@ -200,7 +200,7 @@
                               <button type="button" ng-click="ctrl.reset()" class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset Form</button>
                           </div>
                       </div>
-                      <pre>{{myForm|json}}</pre> 
+                     <!--  <pre>{{myForm|json}}</pre>  -->
                   </form>
               </div>
           </div>

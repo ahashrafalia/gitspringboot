@@ -31,8 +31,7 @@ public class CertMasterServiceImpl implements CertMasterService {
 
 	@Override
 	public CertMaster getById(Serializable id) {
-		// TODO Auto-generated method stub
-		return null;
+		return certMasterRepository.getOne((Long) id);
 	}
 
 	@Override
@@ -43,8 +42,7 @@ public class CertMasterServiceImpl implements CertMasterService {
 
 	@Override
 	public void delete(Serializable id) {
-		// TODO Auto-generated method stub
-
+		certMasterRepository.delete((Long)id);
 	}
 
 	@Override

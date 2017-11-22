@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -76,13 +77,38 @@ public class CertificateController {
 		return new ResponseEntity<>(list, HttpStatus.OK);
 		//return (ResponseEntity<List<CertMaster>>)list;
 	}
+	
+	 @RequestMapping(value = "/cert/{id}", method = RequestMethod.GET)
+	    public ResponseEntity<CertMaster> getUser(@PathVariable("id") long id) {
+	        System.out.println("Fetching CertMaster with id " + id);
+	        CertMaster user = certMasterService.getById(Long.valueOf(id));
+	        if (user == null) {
+	            System.out.println("CertMaster with id " + id + " not found");
+	            return new ResponseEntity<CertMaster>(HttpStatus.NOT_FOUND);
+	        }
+	        return new ResponseEntity<CertMaster>(user, HttpStatus.OK);
+	    }
+	 
+	 @RequestMapping(value = "/cert/{id}", method = RequestMethod.DELETE)
+	    public ResponseEntity<CertMaster> deleteUser(@PathVariable("id") long id) {
+	        System.out.println("Fetching & Deleting CertMaster with id " + id);
+	  
+	        CertMaster user = certMasterService.getById(Long.valueOf(id));
+	        if (user == null) {
+	            System.out.println("Unable to delete. CertMaster with id " + id + " not found");
+	            return new ResponseEntity<CertMaster>(HttpStatus.NOT_FOUND);
+	        }
+	  
+	        certMasterService.delete(Long.valueOf(id));
+	        return new ResponseEntity<CertMaster>(HttpStatus.NO_CONTENT);
+	    }
    
 	
-	@RequestMapping(value = "/cert/{id}", method = RequestMethod.PUT)
+	@RequestMapping(value = "cert/{id}", method = RequestMethod.PUT)
 	public ResponseEntity<CertMaster> updateUser(@PathVariable("id") long id, @RequestBody CertMaster certMaster) {
         System.out.println("Updating certi " + id);
           
-        CertMaster dbcertMaster = certMasterService.getById(id);
+        CertMaster dbcertMaster = certMasterService.getById(Long.valueOf(id));
           
         if (dbcertMaster==null) {
             System.out.println("certificate with id " + id + " not found");
@@ -95,7 +121,7 @@ public class CertificateController {
         CertMaster updated=certMasterService.save(dbcertMaster);
         System.out.println("updated="+updated);
         
-        return new ResponseEntity<CertMaster>(dbcertMaster, HttpStatus.OK);
+        return new ResponseEntity<CertMaster>(updated, HttpStatus.OK);
     }
 	
 	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
