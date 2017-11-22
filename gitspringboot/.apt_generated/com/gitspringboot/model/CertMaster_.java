@@ -9,6 +9,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 @StaticMetamodel(CertMaster.class)
 public abstract class CertMaster_ {
 
+	public static volatile SingularAttribute<CertMaster, Long> clientId;
 	public static volatile SingularAttribute<CertMaster, Date> createdDate;
 	public static volatile SingularAttribute<CertMaster, String> certStatus;
 	public static volatile SingularAttribute<CertMaster, String> certName;

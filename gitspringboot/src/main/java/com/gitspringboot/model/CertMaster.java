@@ -13,6 +13,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.persistence.NamedStoredProcedureQueries;
 import javax.persistence.NamedStoredProcedureQuery;
 import javax.persistence.StoredProcedureParameter;
@@ -62,6 +63,10 @@ public class CertMaster implements Serializable {
 	@SequenceGenerator(sequenceName = "certMaster_seq", allocationSize = 1, name = "certMaster_seq")
 	@Column(name="CERT_ID")
 	private long certId;
+	
+	@Column(name="client_id",updatable=false,insertable=false)
+	//@Transient
+	private long clientId;
 	
 	@Column(name = "CERT_NAME", length = 50)
     private String certName;
@@ -141,6 +146,14 @@ public class CertMaster implements Serializable {
 
 	public void setClientMaster(ClientMaster clientMaster) {
 		this.clientMaster = clientMaster;
+	}
+
+	public long getClientId() {
+		return clientId;
+	}
+
+	public void setClientId(long clientId) {
+		this.clientId = clientId;
 	}
 
 	@Override

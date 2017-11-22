@@ -7,7 +7,10 @@ certHome.factory('CertHomeFactory',['$resource',function($resource){
 		},
 		{
 			update:{
-				method:"PUT"
+				method:"PUT",
+				 headers: {
+			            'Content-Type': 'application/json'
+			        }
 			},
 			delete_user: {
 	            method: 'DELETE'

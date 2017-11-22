@@ -213,6 +213,7 @@
                 <tr>
                   <th>#</th>
                   <th>Cert Id</th>
+                  <th>Client Id</th>
                   <th>Cert Name</th>
                   <th>Created Date</th>
                    <th>Renewed Date</th>
@@ -226,6 +227,7 @@
                 <tr ng-repeat="cert in ctrl.certs">
                 <td>{{$index+1}}}</td>
                   <td><span ng-bind="cert.certId"></span></td>
+                  <td><span ng-bind="cert.clientId"></span></td>
                   <td><span ng-bind="cert.certName"></span></td>
                   <td><span ng-bind="cert.createdDate |date:'dd-MMM-yyyy'"></span></td>
                   <td><span ng-bind="cert.renewedDate"></span></td>
