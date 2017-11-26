@@ -1,9 +1,9 @@
 'use strict';
 certHome.factory('CertHomeFactory',['$resource',function($resource){
-	var url='http://localhost:8081/gitspringboot/rest/secured/cert/:id';
+	var url='http://localhost:8081/gitspringboot/rest/secured/cert/:certId';
 	return $resource(url,
 		{
-			id:'@id'
+			certId:'@certId'
 		},
 		{
 			update:{
