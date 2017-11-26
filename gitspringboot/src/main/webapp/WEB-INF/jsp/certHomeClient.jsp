@@ -38,7 +38,7 @@
 		var date_input=$('input[name="date"]'); //our date input has the name "date"
 		var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
 		date_input.datepicker({
-			format: 'mm/dd/yyyy',
+			format: 'dd-M-yyyy',
 			container: container,
 			todayHighlight: true,
 			autoclose: true,
@@ -174,7 +174,7 @@
                               <label class="col-md-2 control-lable" for="address">Expiary Date</label>
                               <div class="col-md-7">
                               <div class='input-group date' id='datetimepicker1'>
-				                    <input type='text' ng-model="ctrl.cert.expDate" class="form-control input-sm" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+				                    <input type='datetime' ng-model="ctrl.cert.expDate" class="form-control input-sm" id="date" name="date" placeholder="DD-MMM-YYYY" />
 				                </div>
 				                
 				                </div>

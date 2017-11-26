@@ -26,6 +26,7 @@ import org.springframework.web.context.annotation.SessionScope;
 
 import com.gitspringboot.dao.CertMasterSpecification;
 import com.gitspringboot.dao.ClientMasterSpecification;
+import com.gitspringboot.exception.BusinessException;
 import com.gitspringboot.model.CertMaster;
 import com.gitspringboot.model.ClientMaster;
 import com.gitspringboot.service.CertMasterService;
@@ -70,7 +71,7 @@ public class CertificateController {
 	
 	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="cert",method=RequestMethod.GET)
-	public ResponseEntity<List<CertMaster>> cert(){
+	public ResponseEntity<List<CertMaster>> cert()throws BusinessException{
 		
 		//List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
 		List<CertMaster> list=certMasterService.getAllCertViaProcedure();
@@ -79,7 +80,7 @@ public class CertificateController {
 	}
 	
 	 @RequestMapping(value = "/cert/{id}", method = RequestMethod.GET)
-	    public ResponseEntity<CertMaster> getUser(@PathVariable("id") long id) {
+	    public ResponseEntity<CertMaster> getUser(@PathVariable("id") long id) throws BusinessException{
 	        System.out.println("Fetching CertMaster with id " + id);
 	        CertMaster user = certMasterService.getById(Long.valueOf(id));
 	        if (user == null) {
@@ -90,7 +91,7 @@ public class CertificateController {
 	    }
 	 
 	 @RequestMapping(value = "/cert/{id}", method = RequestMethod.DELETE)
-	    public ResponseEntity<CertMaster> deleteUser(@PathVariable("id") long id) {
+	    public ResponseEntity<CertMaster> deleteUser(@PathVariable("id") long id)throws BusinessException {
 	        System.out.println("Fetching & Deleting CertMaster with id " + id);
 	  
 	        CertMaster user = certMasterService.getById(Long.valueOf(id));
@@ -105,7 +106,7 @@ public class CertificateController {
    
 	
 	@RequestMapping(value = "cert/{id}", method = RequestMethod.PUT)
-	public ResponseEntity<CertMaster> updateUser(@PathVariable("id") long id, @RequestBody CertMaster certMaster) {
+	public ResponseEntity<CertMaster> updateUser(@PathVariable("id") long id, @RequestBody CertMaster certMaster)throws BusinessException {
         System.out.println("Updating certi " + id);
           
         CertMaster dbcertMaster = certMasterService.getById(Long.valueOf(id));

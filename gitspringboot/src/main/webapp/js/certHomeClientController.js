@@ -1,8 +1,10 @@
 'use strict';
-certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupService','$window',function($scope,CertHomeFactory,popupService,$window){
+certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupService','$window','$filter',function($scope,CertHomeFactory,popupService,$window,$filter){
 	var self=this;
 	self.certs=[];
 	self.cert= new CertHomeFactory();
+	
+
 	
 	self.fetchAllCerts=function(){
 		self.certs=CertHomeFactory.query();
@@ -25,6 +27,7 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupServi
         for(var i = 0; i < self.certs.length; i++){
             if(self.certs[i].certId === id) {
                self.cert = angular.copy(self.certs[i]);
+               self.cert.expDate = $filter('date')(self.cert.expDate , 'dd-MMM-yyyy'); 
                break;
             }
         }

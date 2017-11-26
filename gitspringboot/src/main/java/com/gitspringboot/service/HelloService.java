@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.gitspringboot.dao.HelloLogRepository;
-import com.gitspringboot.exception.ResourceNotFoundException;
+import com.gitspringboot.exception.BusinessException;
 import com.gitspringboot.model.HelloLog;
 
 @Service
@@ -46,11 +46,11 @@ public class HelloService implements IHelloService {
 	}
 
 	@Override
-	public List<HelloLog> findByAVeryComplicatedQuery(Long id, String name) {
+	public List<HelloLog> findByAVeryComplicatedQuery(Long id, String name) throws BusinessException{
 		List<HelloLog> list=helloDao.findByAVeryComplicatedQuery(id, name);
 		System.out.println("list="+list);
 		if (list.isEmpty()) {
-            throw new ResourceNotFoundException(id, "user not found");
+            throw new BusinessException( "user not found");
         }else{
         	return list;
         }
