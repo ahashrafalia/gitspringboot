@@ -38,7 +38,7 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupServi
         //self.cert.delete_user(id);
     };
     self.deleteUser = function(identity){
-        var cert = CertHomeFactory.get({id:identity}, function() {
+        var cert = CertHomeFactory.get({certId:identity}, function() {
         	console.log("delete cert="+cert);
              cert.$delete_user(function(){
                  console.log('Deleting cert with id ', identity);
