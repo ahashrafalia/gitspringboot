@@ -22,12 +22,14 @@ import javax.persistence.ParameterMode;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 
 @Entity(name="CertMaster")
 @Table(name="CERTMASTER")
+@JsonIgnoreProperties(ignoreUnknown = true)
 //@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "certId")
 @NamedStoredProcedureQueries({
 	@NamedStoredProcedureQuery(
@@ -92,6 +94,12 @@ public class CertMaster implements Serializable {
 	@JsonBackReference 
 	@JoinColumn(name="CLIENT_ID")
 	private ClientMaster clientMaster;
+
+	
+	
+	public CertMaster() {
+		super();
+	}
 
 	public long getCertId() {
 		return certId;

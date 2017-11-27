@@ -83,6 +83,9 @@ public class CertificateController {
 	    public ResponseEntity<CertMaster> getUser(@PathVariable("id") long id) throws BusinessException{
 	        System.out.println("Fetching CertMaster with id " + id);
 	        CertMaster user = certMasterService.getById(Long.valueOf(id));
+	        if (user == null || user.getCertId() <= 0){
+	            throw new BusinessException("ToDo doesn´t exist");
+	        }
 	        if (user == null) {
 	            System.out.println("CertMaster with id " + id + " not found");
 	            return new ResponseEntity<CertMaster>(HttpStatus.NOT_FOUND);

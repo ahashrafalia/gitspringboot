@@ -30,10 +30,6 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators.PropertyGenerator;
 //@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "clientId")
 public class ClientMaster implements Serializable {
 
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -60,6 +56,14 @@ public class ClientMaster implements Serializable {
 	  @Transient
 	@OneToOne(mappedBy="clientMaster",cascade=CascadeType.ALL,fetch=FetchType.LAZY,targetEntity=ContactMaster.class)
     private ContactMaster contactMaster;
+	  
+	  
+	  
+
+	public ClientMaster() {
+		super();
+	}
+
 
 	public long getClientId() {
 		return clientId;
