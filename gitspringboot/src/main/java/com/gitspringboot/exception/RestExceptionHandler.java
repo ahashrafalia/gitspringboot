@@ -21,7 +21,7 @@ public class RestExceptionHandler {
 	public ResponseEntity<ErrorResponse> entityNotFound(Exception ex) {
 		ErrorResponse error = new ErrorResponse();
 		error.setErrorCode(HttpStatus.NOT_FOUND.value());
-		error.setMessage(ex.getMessage());
+		error.setMessage("Certificate does not exists");
 		return new ResponseEntity<ErrorResponse>(error, HttpStatus.NOT_FOUND);
 	}
 	@ExceptionHandler(Exception.class)

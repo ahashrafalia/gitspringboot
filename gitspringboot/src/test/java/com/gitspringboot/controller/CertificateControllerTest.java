@@ -7,31 +7,52 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
+import org.springframework.integration.util.FixedMethodFilter;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
+import com.gitspringboot.ArticalMain;
 import com.gitspringboot.SpringBootTests;
 
-public class CertificateControllerTest extends SpringBootTests{
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes=ArticalMain.class)
+@SpringBootTest
+public class CertificateControllerTest {
 
 	@Autowired
-	private WebApplicationContext webApplicationContext;
+	private WebApplicationContext webAppCxt;
 
 	private MockMvc mockMvc;
 
 	@Before
 	public void setup() {
-		mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
+		mockMvc = MockMvcBuilders.webAppContextSetup(webAppCxt).build();
 	}
 
 	@Test
 	public void certSearchTest() throws Exception {
-		mockMvc.perform(get("/rest/secured/certSearch")).andExpect(status().isOk())
-				.andExpect(content().contentType("application/json;charset=UTF-8"));
-				//.andExpect(jsonPath("$.name").value("emp1")).andExpect(jsonPath("$.designation").value("manager"));
-				//.andExpect(jsonPath("$.empId").value("1")).andExpect(jsonPath("$.salary").value(3000));
+		mockMvc.perform(get("/rest/secured/cert")).andExpect(status().isOk())
+				.andExpect(content().contentType("application/json;charset=UTF-8"))
+				.andExpect(jsonPath("$[0].certId").value(10)).andExpect(jsonPath("$[0].clientId").value(2)) 
+				.andExpect(jsonPath("$[0].certName").value("ANSARI Exchange")).andExpect(jsonPath("$[0].certStatus").value("NEW"));
 
 	}
+	@Test
+	public void verifyToDoById() throws Exception {
+		mockMvc.perform(get("/rest/secured/cert/10").accept(MediaType.APPLICATION_JSON))
+		.andExpect(jsonPath("$.certId").exists())
+		.andExpect(jsonPath("$.clientId").exists())
+		.andExpect(jsonPath("$.certName").exists())
+		.andExpect(jsonPath("$.certId").value(10))
+		.andExpect(jsonPath("$.clientId").value(2))
+		.andExpect(jsonPath("$.certName").value("ANSARI Exchange"));
+		
+}
 }
