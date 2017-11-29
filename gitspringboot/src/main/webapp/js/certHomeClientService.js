@@ -12,7 +12,7 @@ certHome.factory('CertHomeFactory',['$resource',function($resource){
 			            'Content-Type': 'application/json'
 			        }
 			},
-			delete_user: {
+			delete_cert: {
 	            method: 'DELETE'
 	        }
 		});

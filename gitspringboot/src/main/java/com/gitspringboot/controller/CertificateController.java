@@ -29,6 +29,7 @@ import com.gitspringboot.dao.ClientMasterSpecification;
 import com.gitspringboot.exception.BusinessException;
 import com.gitspringboot.model.CertMaster;
 import com.gitspringboot.model.ClientMaster;
+import com.gitspringboot.model.Response;
 import com.gitspringboot.service.CertMasterService;
 import com.gitspringboot.service.ClientMasterService;
 
@@ -94,20 +95,33 @@ public class CertificateController {
 	    }
 	 
 	 @RequestMapping(value = "/cert/{id}", method = RequestMethod.DELETE)
-	    public ResponseEntity<CertMaster> deleteUser(@PathVariable("id") long id)throws BusinessException {
+	    public ResponseEntity<Response>  deleteUser(@PathVariable("id") long id)throws BusinessException {
 	        System.out.println("Fetching & Deleting CertMaster with id " + id);
 	  
 	        CertMaster user = certMasterService.getById(Long.valueOf(id));
-	        if (user == null) {
-	            System.out.println("Unable to delete. CertMaster with id " + id + " not found");
-	            return new ResponseEntity<CertMaster>(HttpStatus.NOT_FOUND);
-	        }
+	        if (user == null || user.getCertId() <= 0){
+	            throw new BusinessException("Certificate does not exists");
+	    	}
 	  
 	        certMasterService.delete(Long.valueOf(id));
-	        return new ResponseEntity<CertMaster>(HttpStatus.NO_CONTENT);
-	    }
+	        //return new ResponseEntity<CertMaster>(HttpStatus.NO_CONTENT);
+	        return new ResponseEntity<Response>(new Response(HttpStatus.OK.value(), "Cert has been deleted"), HttpStatus.OK);
+		}
    
 	
+	 @RequestMapping(value = "cert", method = RequestMethod.POST)
+		public ResponseEntity<CertMaster> createCert(@RequestBody CertMaster certMaster)throws BusinessException {
+	          
+		 System.out.println(certMaster);
+	        CertMaster dbcertMaster = certMasterService.save(certMaster);
+	          
+	        
+	  
+	        
+	        
+	        return new ResponseEntity<CertMaster>(HttpStatus.OK);
+	  }
+	 
 	@RequestMapping(value = "cert/{id}", method = RequestMethod.PUT)
 	public ResponseEntity<CertMaster> updateUser(@PathVariable("id") long id, @RequestBody CertMaster certMaster)throws BusinessException {
         System.out.println("Updating certi " + id);
@@ -121,6 +135,7 @@ public class CertificateController {
   
         dbcertMaster.setCertName(certMaster.getCertName());
         dbcertMaster.setCertStatus(certMaster.getCertStatus());
+        dbcertMaster.setExpDate(certMaster.getExpDate());
         
         CertMaster updated=certMasterService.save(dbcertMaster);
         System.out.println("updated="+updated);

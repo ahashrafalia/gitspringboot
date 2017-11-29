@@ -12,8 +12,13 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupServi
 	};
 	self.fetchAllCerts();
 	
-	 self.updateUser = function(){
+	 self.updateCert = function(){
          self.cert.$update(function(){
+             self.fetchAllCerts();
+         });
+     };
+     self.createCert = function(){
+         self.cert.$save(function(){
              self.fetchAllCerts();
          });
      };
@@ -37,13 +42,13 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupServi
         if(self.cert.certId === id) {//If it is the one shown on screen, reset screen
            self.reset();
         }
-        self.deleteUser(id);
+        self.deleteCert(id);
         //self.cert.delete_user(id);
     };
-    self.deleteUser = function(identity){
+    self.deleteCert = function(identity){
         var cert = CertHomeFactory.get({certId:identity}, function() {
         	console.log("delete cert="+cert);
-             cert.$delete_user(function(){
+             cert.$delete_cert(function(){
                  console.log('Deleting cert with id ', identity);
                  self.fetchAllCerts();
              });
@@ -53,11 +58,11 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupServi
     self.submit = function() {
         if(self.cert.certId==null){
             console.log('Saving New cert', self.cert);    
-            self.createUser();
+            self.createCert();
         }else{
             console.log('Updating cert with id ', self.cert.certId);
-            self.updateUser();
-            console.log('cert updated with id ', self.cert.certId);
+            self.updateCert();
+           // console.log('cert updated with id ', self.cert.certId);
         }
         self.reset();
     };

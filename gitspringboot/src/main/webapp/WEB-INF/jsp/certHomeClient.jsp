@@ -153,7 +153,7 @@
           <h2>Certificate Form </h2>
               <div class="formcontainer">
                   <form ng-submit="ctrl.submit()" name="myForm" class="form-horizontal">
-                      <input type="hidden" ng-model="ctrl.user.id" />
+                      <input type="hidden" ng-model="ctrl.cert.certId" />
                       <div class="row">
                           <div class="form-group col-md-12">
                               <label class="col-md-2 control-lable" for="uname">Cert Name</label>
