@@ -1,6 +1,5 @@
 target/
 .classpath
 .settings
-.project
 .log
 /application.2017-11-14.log
