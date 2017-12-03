@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.annotation.SessionScope;
 
+import com.gitspringboot.bean.CertDetailMap;
 import com.gitspringboot.dao.CertMasterSpecification;
 import com.gitspringboot.dao.ClientMasterSpecification;
 import com.gitspringboot.exception.BusinessException;
@@ -108,6 +109,7 @@ public class CertificateController {
 	        return new ResponseEntity<Response>(new Response(HttpStatus.OK.value(), "Cert has been deleted"), HttpStatus.OK);
 		}
    
+	 
 	
 	 @RequestMapping(value = "cert", method = RequestMethod.POST)
 		public ResponseEntity<CertMaster> createCert(@RequestBody CertMaster certMaster)throws BusinessException {
@@ -145,7 +147,7 @@ public class CertificateController {
 	
 	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="certCountClient",method=RequestMethod.GET)
-	public Map<String,Object> certCountClient(){
+	public ResponseEntity<CertDetailMap>  certCountClient(){
 		
 		//List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
 		LocalDate local90=LocalDate.now().plusDays(91);
@@ -178,7 +180,24 @@ public class CertificateController {
 		certCountMap.put("safelist",list30_60);
 		certCountMap.put("warnlist",list15_30);
 		certCountMap.put("risklist",list_15);
-		return certCountMap;
+		
+		CertDetailMap cmap=new CertDetailMap();
+		
+		
+		Map<String,String> mapCertSatuslist=new LinkedHashMap<>();
+		mapCertSatuslist.put("good",String.valueOf(list60_90.size()));
+		mapCertSatuslist.put("safe",String.valueOf(list30_60.size()));
+		mapCertSatuslist.put("wardn",String.valueOf(list15_30.size()));
+		mapCertSatuslist.put("risk",String.valueOf(list_15.size()));
+		
+		Map<String,List<CertMaster>> mapCertlist=new LinkedHashMap<>();
+		mapCertlist.put("goodlist",list60_90);
+		mapCertlist.put("safelist",list30_60);
+		mapCertlist.put("warnlist",list15_30);
+		mapCertlist.put("risklist",list_15);
+		cmap.setMapCertlist(mapCertlist);
+		cmap.setMapCertStatuslist(mapCertSatuslist);
+		return new ResponseEntity<CertDetailMap>(cmap,HttpStatus.OK);
 	}
 	
 	@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
