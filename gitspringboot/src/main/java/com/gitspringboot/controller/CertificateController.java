@@ -187,7 +187,7 @@ public class CertificateController {
 		Map<String,String> mapCertSatuslist=new LinkedHashMap<>();
 		mapCertSatuslist.put("good",String.valueOf(list60_90.size()));
 		mapCertSatuslist.put("safe",String.valueOf(list30_60.size()));
-		mapCertSatuslist.put("wardn",String.valueOf(list15_30.size()));
+		mapCertSatuslist.put("warn",String.valueOf(list15_30.size()));
 		mapCertSatuslist.put("risk",String.valueOf(list_15.size()));
 		
 		Map<String,List<CertMaster>> mapCertlist=new LinkedHashMap<>();
@@ -200,7 +200,7 @@ public class CertificateController {
 		return new ResponseEntity<CertDetailMap>(cmap,HttpStatus.OK);
 	}
 	
-	@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
+	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="clientSpec",method=RequestMethod.GET)
 	public List<ClientMaster> clientSpec(){
 				

@@ -1,6 +1,12 @@
 'use strict';
-certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupService','$window','$filter',function($scope,CertHomeFactory,popupService,$window,$filter){
+certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','CertHomeFactory2','popupService','$window','$filter',
+		function($scope,CertHomeFactory,CertHomeFactory2,popupService,$window,$filter){
 	var self=this;
+	$scope.good="";
+	$scope.safe="";
+	$scope.warn="";
+	$scope.risk="";
+	$scope.parJson=[];	
 	self.certs=[];
 	self.cert= new CertHomeFactory();
 	
@@ -79,4 +85,39 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','popupServi
          popupService.showPopup('Really delete this?');
      };*/
          
+    
+    //var self=this;
+	self.certstatuslist=[];
+	self.certstatuslists= new CertHomeFactory2();
+	
+
+	
+	self.fetchCertstatuslist=function(){
+		self.certstatuslist=CertHomeFactory2.query(function(data){
+			
+			//console.log("certstatuslist ctrl="+JSON.stringify(data));
+			var st=JSON.stringify(data);
+			var jsonData = JSON.parse(st);
+			$scope.good = jsonData[0].good;
+			$scope.safe = jsonData[0].safe;
+			$scope.warn = jsonData[0].warn;
+			$scope.risk = jsonData[0].risk;
+			console.log(jsonData[0]);
+			console.log(jsonData[1]);
+			/*angular.forEach(jsonData, function(item){
+              console.log(item.good);
+				$scope.good=item.good;
+				
+            })*/
+		});
+		console.log($scope.good);
+		 $scope.myOrder=self.certstatuslist;
+		
+		
+		//console.log("certstatuslist="+$scope.myOrder.mapCertStatuslist.good);
+	};
+	self.fetchCertstatuslist();
 }]);
+
+
+

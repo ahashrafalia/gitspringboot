@@ -129,23 +129,23 @@
          
             <div class="col-6 col-sm-3 placeholder thumbnail text-center">
               <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label1</h4>
-              <div class="text-muted caption"><span style="font-size:100%;color:White;">Something else</span></div>
+              <h4>Good</h4>
+              <div class="text-muted caption"><span style="font-size:100%;color:White;">	{{good}}</span></div>
             </div>
-            <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-6 col-sm-3 placeholder">
+             <div class="col-6 col-sm-3 placeholder thumbnail text-center">
               <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+              <h4>Safe</h4>
+              <div class="text-muted caption"><span style="font-size:100%;color:White;">	{{safe}}</span></div>
             </div>
-            <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+             <div class="col-6 col-sm-3 placeholder thumbnail text-center">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Warn</h4>
+              <div class="text-muted caption"><span style="font-size:100%;color:White;">	{{warn}}</span></div>
+            </div>
+             <div class="col-6 col-sm-3 placeholder thumbnail text-center">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Risk</h4>
+              <div class="text-muted caption"><span style="font-size:100%;color:White;">	{{risk}}</span></div>
             </div>
           </section>
           
