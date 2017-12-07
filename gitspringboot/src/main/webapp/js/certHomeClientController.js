@@ -1,6 +1,13 @@
 'use strict';
-certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','CertHomeFactory2','popupService','$window','$filter',
+certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','CertHomeFactory2',
+	'popupService','$window','$filter',
 		function($scope,CertHomeFactory,CertHomeFactory2,popupService,$window,$filter){
+	
+	 $scope.option = {
+		        name: 'Name (hover over for more details)',
+		        longDescription: 'This is my detailed description...  lots of text here'
+		      }
+	 
 	var self=this;
 	$scope.good="";
 	$scope.safe="";
@@ -117,7 +124,9 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','CertHomeFa
 		//console.log("certstatuslist="+$scope.myOrder.mapCertStatuslist.good);
 	};
 	self.fetchCertstatuslist();
+	
+	
+	
 }]);
-
 
 

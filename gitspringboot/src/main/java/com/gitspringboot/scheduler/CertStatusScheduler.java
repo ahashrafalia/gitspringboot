@@ -29,8 +29,8 @@ public class CertStatusScheduler {
 
 	static final String time = "0 * * * * *";
 
-	// @Scheduled(cron="0 15 22 ? * *")// everyday 22.15 mins
-	@Scheduled(cron = time) //
+	 @Scheduled(cron="0 15 22 ? * *")// everyday 22.15 mins
+	//@Scheduled(cron = time) //
 	public void demoServiceMethod() {
 
 		System.out.println("Method executed at every 10.42PM seconds. Current time is :: " + new Date() + " from prop="
