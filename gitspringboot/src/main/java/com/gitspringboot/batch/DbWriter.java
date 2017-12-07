@@ -54,6 +54,8 @@ public class DbWriter implements ItemWriter<CertCsv> {
 			
 			
 		}
+		
+		
 
 	}
 
