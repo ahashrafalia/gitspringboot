@@ -47,6 +47,7 @@ public class CsvFileToDatabaseJobConfig {
 
 	@Bean
 	public ItemWriter<CertCsv> csvFileDatabaseItemWriter() {
+		return new DbWriter();
 	/*        JdbcBatchItemWriter<StudentDTO> databaseItemWriter = new JdbcBatchItemWriter<>();
 	        databaseItemWriter.setDataSource(dataSource);
 	        databaseItemWriter.setJdbcTemplate(jdbcTemplate);
@@ -58,7 +59,7 @@ public class CsvFileToDatabaseJobConfig {
 
 	        return databaseItemWriter;
 */
-		return new ItemWriter<CertCsv>() {
+		/*return new ItemWriter<CertCsv>() {
 
 			@Override
 			public void write(List<? extends CertCsv> arg0) throws Exception {
@@ -69,7 +70,7 @@ public class CsvFileToDatabaseJobConfig {
 			}
 
 			
-		};
+		};*/
 	}
 	@Bean
 	public Step csvFileToDatabaseStep(ItemReader<CertCsv> csvFileItemReader,

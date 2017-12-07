@@ -25,7 +25,7 @@ public class ClientMasterServiceImpl implements ClientMasterService {
 	@Override
 	public ClientMaster save(ClientMaster entity) {
 		// TODO Auto-generated method stub
-		return null;
+		return clientMasterRepository.save(entity);
 	}
 
 	@Override

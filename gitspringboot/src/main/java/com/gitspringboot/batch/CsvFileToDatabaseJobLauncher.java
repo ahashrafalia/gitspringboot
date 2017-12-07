@@ -36,7 +36,7 @@ public class CsvFileToDatabaseJobLauncher {
         this.jobLauncher = jobLauncher;
     }
 
-    @Scheduled(fixedDelay=10000)
+    @Scheduled(fixedDelay=240000)
     void launchCsvFileToDatabaseJob() throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
         System.out.println("Starting csvFileToDatabase job");
 
