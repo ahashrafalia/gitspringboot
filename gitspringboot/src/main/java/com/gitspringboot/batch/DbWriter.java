@@ -21,6 +21,7 @@ public class DbWriter implements ItemWriter<CertCsv> {
 
 	@Override
 	public void write(List<? extends CertCsv> ccs) throws Exception {
+		System.out.println("ccs size="+ccs.size());
 		for (CertCsv  cc: ccs) {
 			System.out.println("Writing the data using batch writer: " + cc);
 			ClientMaster clientm=new ClientMaster();
@@ -54,6 +55,7 @@ public class DbWriter implements ItemWriter<CertCsv> {
 			
 			
 		}
+		Thread.sleep(7000);
 
 	}
 
