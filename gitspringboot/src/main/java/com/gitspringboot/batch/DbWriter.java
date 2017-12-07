@@ -11,6 +11,7 @@ import com.gitspringboot.model.ClientMaster;
 import com.gitspringboot.dao.ClientMasterRepository;
 import com.gitspringboot.model.CertMaster;
 import com.gitspringboot.model.ClientMaster_;
+import com.gitspringboot.model.ContactMaster;
 import com.gitspringboot.service.ClientMasterService;
 
 public class DbWriter implements ItemWriter<CertCsv> {
@@ -20,6 +21,8 @@ public class DbWriter implements ItemWriter<CertCsv> {
 
 	@Override
 	public void write(List<? extends CertCsv> ccs) throws Exception {
+		
+		
 		for (CertCsv  cc: ccs) {
 			System.out.println("Writing the data using batch writer: " + cc);
 			ClientMaster clientm=new ClientMaster();
@@ -36,6 +39,16 @@ public class DbWriter implements ItemWriter<CertCsv> {
 			cm.setRenewedDate(cc.getRenewedDate());
 			certSet.add(cm);
 			clientm.setCertMaster(certSet);
+			
+			ContactMaster contm=new ContactMaster();
+			contm.setClientMaster(clientm);
+			contm.setFirstName(cc.getFirstName());
+			contm.setLastName(cc.getLastName());
+			contm.setPhoneNo(cc.getPhNo());
+			contm.setEmail(cc.getEmail());
+			contm.setCountry(cc.getCountry());
+			
+			clientm.setContactMaster(contm);
 			
 			clientMasterService.save(clientm);
 			
