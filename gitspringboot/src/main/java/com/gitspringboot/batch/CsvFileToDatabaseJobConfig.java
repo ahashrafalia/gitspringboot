@@ -18,15 +18,19 @@ import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.batch.item.file.transform.LineTokenizer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.io.ClassPathResource;
-
+import org.springframework.batch.core.JobExecutionListener;
 @Configuration
 @EnableBatchProcessing
 public class CsvFileToDatabaseJobConfig {
+	
+	@Autowired
+	InterceptingJobExecution interceptingJobExecution;
 
 	@Bean
 	ItemReader<CertCsv> csvFileItemReader() {
@@ -93,7 +97,9 @@ public class CsvFileToDatabaseJobConfig {
 				.get("csvFileToDatabaseJob")
 				.incrementer(new RunIdIncrementer())
 				.flow(csvStudentStep)
-				.end().build();
+				.end()
+				.listener(interceptingJobExecution)
+				.build();
 	}
 
 	private LineMapper<CertCsv> createStudentLineMapper() {

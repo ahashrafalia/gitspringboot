@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
+import org.springframework.batch.core.JobExecutionListener;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,7 +36,7 @@ public class CsvFileToDatabaseJobLauncher {
         this.jobLauncher = jobLauncher;
     }
 
-    @Scheduled(fixedDelay=240000)
+    @Scheduled(fixedDelay=30000)
     void launchCsvFileToDatabaseJob() throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
         System.out.println("Starting csvFileToDatabase job");
 
