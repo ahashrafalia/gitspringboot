@@ -14,6 +14,7 @@ public abstract class ClientMaster_ {
 	public static volatile SingularAttribute<ClientMaster, Date> createdDate;
 	public static volatile SingularAttribute<ClientMaster, String> clientName;
 	public static volatile SetAttribute<ClientMaster, CertMaster> certMaster;
+	public static volatile SingularAttribute<ClientMaster, ContactMaster> contactMaster;
 	public static volatile SingularAttribute<ClientMaster, String> status;
 
 }

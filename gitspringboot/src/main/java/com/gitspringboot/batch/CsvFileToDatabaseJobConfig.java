@@ -21,6 +21,7 @@ import org.springframework.batch.item.file.transform.LineTokenizer;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.io.ClassPathResource;
 
 @Configuration
@@ -78,7 +79,7 @@ public class CsvFileToDatabaseJobConfig {
 			StepBuilderFactory stepBuilderFactory) {
 		
 		return stepBuilderFactory.get("csvFileToDatabaseStep")
-				.<CertCsv, CertCsv>chunk(1)
+				.<CertCsv, CertCsv>chunk(2)
 				.reader(csvFileItemReader)
 				.processor(csvFileItemProcessor)
 				.writer(csvFileDatabaseItemWriter)
@@ -111,7 +112,8 @@ public class CsvFileToDatabaseJobConfig {
 		DelimitedLineTokenizer studentLineTokenizer = new DelimitedLineTokenizer();
 		studentLineTokenizer.setDelimiter(";");
 		studentLineTokenizer.setNames(new String[] { "clientName", "status", "createdDate", "certName",
-				"certCreatedDate", "renewedDate", "expDate", "certStatus" });
+				"certCreatedDate", "renewedDate", "expDate", "certStatus","firstName","lastName",
+				"phNo","email","country"});
 		return studentLineTokenizer;
 	}
 

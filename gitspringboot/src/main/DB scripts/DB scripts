@@ -231,7 +231,12 @@ values(20,2,'Khalifa',sysdate,NULL,TO_DATE('02/DEC/2017', 'DD/MON/YYYY'),'NEW') 
 insert into CERTMASTER(CERT_ID,CLIENT_ID,CERT_NAME,CREATED_DATE,RENEWED_DATE,EXP_DATE,CERT_STATUS)
 values(21,2,'Canan',sysdate,NULL,TO_DATE('19/DEC/2017', 'DD/MON/YYYY'),'NEW')    ;    
  
-		
+
+CREATE SEQUENCE contactMaster_seq
+  MINVALUE 1
+  MAXVALUE 9999999999
+  START WITH 1
+  INCREMENT BY 1; 		
 		
 create table CONTACTMASTER(
 		CONTACT_ID numeric(10) not null,

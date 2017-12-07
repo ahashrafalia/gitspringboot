@@ -14,6 +14,13 @@ public class CertCsv {
 	private Date expDate;
 	private String certStatus;
 	
+	private String firstName;
+	private String lastName;
+	private String phNo;
+	private String email;
+	private String country;
+	
+	
 	
 	public String getClientName() {
 		return clientName;
@@ -62,6 +69,38 @@ public class CertCsv {
 	}
 	public void setCertStatus(String certStatus) {
 		this.certStatus = certStatus;
+	}
+	
+	
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getPhNo() {
+		return phNo;
+	}
+	public void setPhNo(String phNo) {
+		this.phNo = phNo;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
 	}
 	@Override
 	public String toString() {

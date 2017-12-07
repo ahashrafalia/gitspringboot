@@ -53,7 +53,7 @@ public class ClientMaster implements Serializable {
 	@OneToMany(mappedBy="clientMaster",fetch=FetchType.LAZY,targetEntity=CertMaster.class,cascade = CascadeType.ALL)
 	private Set<CertMaster> certMaster;
 
-	  @Transient
+	 // @Transient
 	@OneToOne(mappedBy="clientMaster",cascade=CascadeType.ALL,fetch=FetchType.LAZY,targetEntity=ContactMaster.class)
     private ContactMaster contactMaster;
 	  
