@@ -7,6 +7,7 @@ public class CertCSVProcessor implements ItemProcessor<CertCsv, CertCsv> {
 	@Override
 	public CertCsv process(CertCsv certCSV) throws Exception {
 		//System.out.println(certCSV);
+		certCSV.setClientName(certCSV.getClientName().toLowerCase());
 		return certCSV;
 	}
 

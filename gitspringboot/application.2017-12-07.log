@@ -1,0 +1,1082 @@
+2017-12-07 09:46:33.517  INFO 7152 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 7152 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 09:46:33.538  INFO 7152 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 09:46:48.011  INFO 7152 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 09:46:48.013  INFO 7152 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 09:46:59.663  INFO 7152 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 26.862 seconds (JVM running for 27.656)
+
+2017-12-07 09:47:35.192  INFO 7152 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 09:47:35.357  INFO 7152 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:47:43.789  INFO 7152 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 09:47:43.831  INFO 7152 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 09:47:43.850  INFO 7152 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 09:47:43.918  INFO 7152 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 09:47:43.991  INFO 7152 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:47:44.019  INFO 7152 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:47:44.064  INFO 7152 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 09:47:44.089  INFO 7152 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 09:47:44.770  INFO 7152 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 09:47:44.780  INFO 7152 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 09:56:07.093  INFO 7152 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:07.094  INFO 7152 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:08.899  INFO 7152 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:08.923  INFO 7152 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:09.302  INFO 7152 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:09.339  INFO 7152 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 09:56:09.347  INFO 7152 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:09.359  INFO 7152 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:09.373  INFO 7152 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:09.451  INFO 7152 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:09.467  INFO 7152 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:09.470  INFO 7152 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:10.566  INFO 7152 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 09:56:10.594  INFO 7152 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:05:22.705  INFO 7152 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:05:22.712  INFO 7152 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:05:23.200  INFO 7152 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:05:23.216  INFO 7152 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:05:23.237  INFO 7152 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:05:23.239  INFO 7152 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:05:23.251  INFO 7152 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:05:23.266  INFO 7152 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:05:23.274  INFO 7152 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:05:23.310  INFO 7152 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:12:32.144  INFO 7152 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:12:32.152  INFO 7152 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:12:32.491  INFO 7152 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:12:32.504  INFO 7152 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:12:32.518  INFO 7152 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:12:32.526  INFO 7152 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:12:32.534  INFO 7152 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:12:32.563  INFO 7152 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:12:32.571  INFO 7152 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:12:32.623  INFO 7152 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:13:29.412  INFO 7152 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:13:29.420  INFO 7152 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:13:29.456  INFO 7152 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:13:29.510  INFO 7152 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:13:29.511  INFO 7152 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:13:29.518  INFO 7152 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:13:29.531  INFO 7152 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:13:29.524  INFO 7152 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:13:29.569  INFO 7152 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:13:29.528  INFO 7152 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:13.837  INFO 7152 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:13.843  INFO 7152 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:13.897  INFO 7152 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:13.915  INFO 7152 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:13.917  INFO 7152 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:13.922  INFO 7152 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:13.938  INFO 7152 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:13.953  INFO 7152 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:13.953  INFO 7152 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:13.963  INFO 7152 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:14.439  INFO 7152 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:14:14.444  INFO 7152 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+A4849BBC0B61C18CE18A6C702BD4AACB
+2017-12-07 10:23:43.668  WARN 7152 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 10:23:43.669  WARN 7152 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 10:23:44.655  INFO 7152 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 7152 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 10:23:44.655  INFO 7152 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 10:23:51.952  INFO 7152 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 10:23:51.977  INFO 7152 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 10:23:58.130  INFO 7152 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 13.707 seconds (JVM running for 2246.067)
+
+2017-12-07 13:49:59.695  WARN 7152 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 13:49:59.696  WARN 7152 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 14:21:59.438  INFO 6348 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 6348 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 14:21:59.438  INFO 6348 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 14:22:12.961  INFO 6348 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 14:22:12.963  INFO 6348 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 14:22:31.150  INFO 6348 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 32.657 seconds (JVM running for 33.44)
+
+2017-12-07 14:24:41.879  INFO 8648 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 8648 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 14:24:41.881  INFO 8648 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 14:24:53.200  INFO 8648 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 14:24:53.201  INFO 8648 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 14:25:05.038  INFO 8648 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 23.837 seconds (JVM running for 24.561)
+
+2017-12-07 14:31:16.013  WARN 8648 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 14:31:16.015  WARN 8648 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 14:31:16.699  INFO 8648 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 8648 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 14:31:16.700  INFO 8648 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 14:34:01.788  INFO 2680 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 2680 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 14:34:01.788  INFO 2680 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 14:34:15.245  INFO 2680 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 14:34:15.247  INFO 2680 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 14:34:27.267  INFO 2680 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 26.284 seconds (JVM running for 27.069)
+
+2017-12-07 15:33:03.067  INFO 6572 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 6572 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 15:33:03.068  INFO 6572 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 15:33:15.248  INFO 6572 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 15:33:15.250  INFO 6572 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 15:33:26.777  INFO 6572 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 24.503 seconds (JVM running for 25.257)
+
+2017-12-07 15:44:30.983  INFO 9140 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 9140 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 15:44:30.984  INFO 9140 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 15:44:44.204  INFO 9140 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 15:44:44.206  INFO 9140 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 15:44:56.446  INFO 9140 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 26.311 seconds (JVM running for 27.036)
+
+2017-12-07 15:53:19.251  INFO 1384 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 1384 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 15:53:19.252  INFO 1384 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 15:53:32.083  INFO 1384 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 15:53:32.085  INFO 1384 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 15:53:44.211  INFO 1384 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 25.706 seconds (JVM running for 26.438)
+
+2017-12-07 15:59:55.933  INFO 5784 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 5784 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 15:59:55.934  INFO 5784 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 16:00:07.528  INFO 5784 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:00:07.529  INFO 5784 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:00:19.068  INFO 5784 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 23.837 seconds (JVM running for 24.537)
+
+2017-12-07 16:06:57.621  INFO 9140 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 9140 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 16:06:57.622  INFO 9140 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 16:07:09.260  INFO 9140 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:07:09.262  INFO 9140 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:07:20.663  INFO 9140 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 23.794 seconds (JVM running for 24.517)
+
+2017-12-07 16:11:51.567  WARN 9140 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 16:11:51.568  WARN 9140 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 16:11:52.220  INFO 9140 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 9140 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 16:11:52.221  INFO 9140 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 16:11:55.840  INFO 9140 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:11:55.842  INFO 9140 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:12:00.964  INFO 9140 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 8.85 seconds (JVM running for 304.811)
+
+2017-12-07 16:13:29.805  INFO 5948 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 5948 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 16:13:29.806  INFO 5948 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 16:13:42.403  INFO 5948 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:13:42.405  INFO 5948 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:13:52.452  INFO 5948 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 23.36 seconds (JVM running for 24.106)
+
+2017-12-07 16:16:30.331  INFO 6000 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 6000 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 16:16:30.331  INFO 6000 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 16:16:43.035  INFO 6000 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:16:43.037  INFO 6000 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:16:55.558  INFO 6000 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 25.941 seconds (JVM running for 26.677)
+
+2017-12-07 16:24:15.884  INFO 1696 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 1696 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 16:24:15.885  INFO 1696 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 16:26:18.467  INFO 2976 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 2976 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 16:26:18.468  INFO 2976 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 16:26:30.429  INFO 2976 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:26:30.431  INFO 2976 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 16:26:40.309  INFO 2976 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 22.591 seconds (JVM running for 23.305)
+
+2017-12-07 18:36:05.707  INFO 4140 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 4140 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 18:36:05.707  INFO 4140 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 18:36:18.476  INFO 4140 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 18:36:18.478  INFO 4140 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 18:36:29.218  INFO 4140 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 24.343 seconds (JVM running for 25.218)
+
+2017-12-07 18:37:34.119  INFO 5976 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 5976 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 18:37:34.119  INFO 5976 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 18:37:49.256  INFO 5976 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 18:37:49.258  INFO 5976 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 18:38:00.384  INFO 5976 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 27.058 seconds (JVM running for 27.879)
+
+2017-12-07 18:40:02.358  INFO 2376 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 2376 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 18:40:02.359  INFO 2376 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 18:40:15.019  INFO 2376 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 18:40:15.021  INFO 2376 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 18:40:25.184  INFO 2376 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 23.595 seconds (JVM running for 24.462)
+
+2017-12-07 18:44:03.697  INFO 7820 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 7820 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 18:44:03.698  INFO 7820 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 18:44:20.587  INFO 7820 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 18:44:20.589  INFO 7820 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 18:44:33.170  INFO 7820 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 30.292 seconds (JVM running for 31.103)
+
+2017-12-07 18:47:13.082  INFO 7412 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 7412 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 18:47:13.082  INFO 7412 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 18:47:28.036  INFO 7412 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 18:47:28.038  INFO 7412 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 18:47:40.872  INFO 7412 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 28.614 seconds (JVM running for 29.445)
+
+2017-12-07 19:04:03.756  INFO 7444 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 7444 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 19:04:03.757  INFO 7444 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 19:04:26.345  INFO 7444 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:04:26.347  INFO 7444 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:04:45.960  INFO 7444 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 43.807 seconds (JVM running for 46.334)
+
+2017-12-07 19:07:03.784  INFO 3992 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 3992 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 19:07:03.785  INFO 3992 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 19:07:17.364  INFO 3992 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:07:17.367  INFO 3992 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:07:30.040  INFO 3992 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 27.073 seconds (JVM running for 27.913)
+
+2017-12-07 19:10:27.093  INFO 8856 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 8856 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 19:10:27.094  INFO 8856 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 19:10:39.687  INFO 8856 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:10:39.694  INFO 8856 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:10:51.725  INFO 8856 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 25.445 seconds (JVM running for 26.262)
+
+2017-12-07 19:11:10.351  WARN 8856 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 19:11:10.351  WARN 8856 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 19:11:11.111  INFO 8856 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 8856 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 19:11:11.112  INFO 8856 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 19:11:14.918  INFO 8856 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:11:14.920  INFO 8856 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:11:21.587  INFO 8856 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 10.588 seconds (JVM running for 56.123)
+
+2017-12-07 19:44:04.757  INFO 7716 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 7716 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 19:44:04.758  INFO 7716 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 19:44:19.099  INFO 7716 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:44:19.101  INFO 7716 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:44:34.724  INFO 7716 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 30.867 seconds (JVM running for 31.784)
+
+2017-12-07 19:50:14.379  INFO 6564 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 6564 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 19:50:14.380  INFO 6564 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 19:50:26.408  INFO 6564 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:50:26.410  INFO 6564 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 19:50:37.426  INFO 6564 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 23.761 seconds (JVM running for 24.503)
+
+2017-12-07 20:59:10.831  INFO 6492 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 6492 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 20:59:10.832  INFO 6492 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 20:59:22.964  INFO 6492 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 20:59:22.966  INFO 6492 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 20:59:34.088  INFO 6492 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 24.015 seconds (JVM running for 24.841)
+
+2017-12-07 21:04:47.172  INFO 7944 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 7944 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 21:04:47.172  INFO 7944 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 21:04:58.902  INFO 7944 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 21:04:58.904  INFO 7944 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 21:05:09.790  INFO 7944 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 23.326 seconds (JVM running for 24.065)
+
+2017-12-07 21:27:13.546  INFO 4224 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 4224 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 21:27:13.547  INFO 4224 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 21:27:25.985  INFO 4224 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 21:27:25.987  INFO 4224 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 21:27:38.035  INFO 4224 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 25.246 seconds (JVM running for 26.153)
+
+2017-12-07 21:28:20.458  INFO 4224 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 21:28:20.583  INFO 4224 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+571D65E77509B546162DDA552E3D3D37
+2017-12-07 21:28:22.464  INFO 4224 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 21:28:22.770  INFO 4224 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 21:28:22.773  INFO 4224 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 21:28:22.786  INFO 4224 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 21:28:22.770  INFO 4224 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 21:28:22.830  INFO 4224 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+571D65E77509B546162DDA552E3D3D37
+2017-12-07 21:28:22.849  INFO 4224 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 21:28:22.900  INFO 4224 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 21:28:30.374  INFO 4224 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+571D65E77509B546162DDA552E3D3D37
+2017-12-07 21:28:30.385  INFO 4224 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+571D65E77509B546162DDA552E3D3D37
+2017-12-07 21:42:22.017  WARN 4224 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 21:42:22.018  WARN 4224 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 21:42:22.900  INFO 4224 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 4224 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 21:42:22.900  INFO 4224 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 21:42:27.323  INFO 4224 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 21:42:27.325  INFO 4224 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 21:42:33.749  INFO 4224 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 10.965 seconds (JVM running for 921.845)
+
+2017-12-07 21:57:09.749  WARN 4224 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 21:57:09.751  WARN 4224 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 22:18:26.584  INFO 5896 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 5896 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 22:18:26.585  INFO 5896 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 22:18:39.027  INFO 5896 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 22:18:39.029  INFO 5896 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 22:18:53.686  INFO 5896 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 27.885 seconds (JVM running for 28.665)
+
+2017-12-07 23:07:48.984  INFO 4400 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 4400 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 23:07:48.984  INFO 4400 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 23:08:01.610  INFO 4400 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 23:08:01.610  INFO 4400 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 23:08:13.841  INFO 4400 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 25.736 seconds (JVM running for 26.558)
+
+2017-12-07 23:09:51.217  WARN 4400 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 23:09:51.217  WARN 4400 --- [ost-startStop-2] c.g.filter.SessionIdLogFilter            : Destruindo o filtro de logging
+
+2017-12-07 23:09:51.810  INFO 4400 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 4400 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 23:09:51.810  INFO 4400 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 23:09:56.730  INFO 4400 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 23:09:56.730  INFO 4400 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 23:10:02.804  INFO 4400 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 11.119 seconds (JVM running for 135.523)
+
+2017-12-07 23:12:59.621  INFO 5900 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 5900 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 23:12:59.621  INFO 5900 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 23:13:12.108  INFO 5900 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 23:13:12.108  INFO 5900 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 23:13:37.401  INFO 4704 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 4704 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 23:13:37.401  INFO 4704 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 23:13:49.561  INFO 4704 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 23:13:49.561  INFO 4704 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 23:15:06.225  INFO 4704 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 89.621 seconds (JVM running for 90.436)
+
+2017-12-07 23:15:59.317  INFO 6384 --- [  restartedMain] com.gitspringboot.ArticalMain            : Starting ArticalMain on ashrafPC with PID 6384 (C:\Users\Administrator\git\gitspringboot\gitspringboot\target\classes started by Administrator in C:\Users\Administrator\git\gitspringboot\gitspringboot)
+
+2017-12-07 23:15:59.317  INFO 6384 --- [  restartedMain] com.gitspringboot.ArticalMain            : The following profiles are active: dev
+
+2017-12-07 23:16:12.242  INFO 6384 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 23:16:12.243  INFO 6384 --- [ost-startStop-1] c.g.filter.SessionIdLogFilter            : Ashraf logging filter
+
+2017-12-07 23:16:27.420  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 23:16:27.588  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:29.235  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 23:16:29.320  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 23:16:29.343  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 23:16:29.350  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 23:16:29.376  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 23:16:29.405  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:29.433  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:29.448  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 23:16:29.904  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 23:16:29.904  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 23:16:34.124  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:34.138  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:34.200  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:34.229  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:34.232  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:34.247  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:34.257  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:34.262  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+
+2017-12-07 23:16:34.263  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:34.272  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:34.666  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:34.669  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:36.571  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:36.579  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:36.623  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:36.669  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:36.680  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:36.706  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:36.746  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:36.760  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:36.777  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:36.786  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:37.224  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:37.236  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.401  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.410  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.445  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.447  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.457  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.468  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.485  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.489  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.491  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.497  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.832  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:39.843  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.035  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.043  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.079  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.080  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.098  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.107  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.143  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.146  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.152  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.153  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.549  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:43.551  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.514  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.519  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.551  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.558  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.568  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.570  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.572  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.579  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.597  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.604  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.941  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:45.950  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.255  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.259  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.293  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.297  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.305  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.309  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.310  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.323  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.338  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.293  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.715  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:52.716  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:53.873  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:53.910  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:53.937  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:53.940  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:53.941  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:53.947  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:53.956  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:53.974  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:53.982  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:53.994  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:54.325  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:54.331  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.359  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.364  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.386  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.393  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.395  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.402  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.410  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.412  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.417  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.423  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.724  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:55.726  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.455  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.459  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.500  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.501  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.510  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.520  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.500  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.526  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.534  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.520  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.830  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:56.833  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.529  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.533  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.577  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.580  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.577  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.590  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.596  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.612  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.623  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.632  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.913  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:57.915  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.053  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.057  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.088  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.095  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.097  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.106  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.109  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.112  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.147  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.151  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.524  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:16:59.527  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:00.807  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:00.812  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:00.874  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:00.894  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:00.902  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:00.944  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:00.965  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:00.968  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:00.973  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:00.986  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:01.243  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:01.253  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.242  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.247  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.278  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.279  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.290  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.298  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.302  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.307  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.311  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.313  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.596  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:02.598  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:03.742  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:03.746  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:03.786  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:03.790  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:03.801  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:03.810  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:03.814  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:03.823  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:03.829  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:03.838  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.104  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.105  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.904  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.909  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.953  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.953  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.961  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.969  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.973  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.978  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:04.987  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.020  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.358  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.359  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.879  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.883  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.920  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.926  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.935  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.942  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.948  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.959  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:05.967  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:06.003  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:07.288  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:07.290  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.458  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.462  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.502  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.507  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.521  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.524  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.531  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.538  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.541  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.547  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.841  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:09.847  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:10.866  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:10.870  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:10.904  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:10.908  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:10.909  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:10.915  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:10.935  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:10.935  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:10.940  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:10.959  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:11.226  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:11.230  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.191  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.194  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.231  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.237  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.241  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.251  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.251  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.253  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.270  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.283  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.558  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:12.560  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:29.288  INFO 6384 --- [  restartedMain] com.gitspringboot.ArticalMain            : Started ArticalMain in 90.829 seconds (JVM running for 91.556)
+
+2017-12-07 23:17:43.649  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:43.652  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:43.694  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:43.696  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:43.702  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:43.705  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:43.712  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:43.709  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:43.726  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:43.739  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:44.103  INFO 6384 --- [nio-8081-exec-1] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:17:44.104  INFO 6384 --- [nio-8081-exec-3] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:28.028  INFO 6384 --- [nio-8081-exec-8] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:28.252  INFO 6384 --- [nio-8081-exec-6] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:28.379  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.172  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.178  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.216  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.224  INFO 6384 --- [nio-8081-exec-9] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.224  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.232  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.233  INFO 6384 --- [nio-8081-exec-2] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.236  INFO 6384 --- [nio-8081-exec-7] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.241  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.249  INFO 6384 --- [nio-8081-exec-4] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.556  INFO 6384 --- [nio-8081-exec-5] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13
+2017-12-07 23:18:34.559  INFO 6384 --- [io-8081-exec-10] c.g.filter.SessionIdLogFilter            : Hey MyFilter invoked man
+997ED526DDCCD9C8DCA76DF120937A13

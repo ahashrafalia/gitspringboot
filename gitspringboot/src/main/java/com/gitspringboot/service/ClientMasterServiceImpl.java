@@ -52,6 +52,14 @@ public class ClientMasterServiceImpl implements ClientMasterService {
 		return clientMasterRepository.findAll(spec);
 	}
 
+	@Override
+	public Boolean existsByclientName(String username) {
+		// TODO Auto-generated method stub
+		return clientMasterRepository.existsByclientName(username);
+	}
+	
+	
+
 	
 
 }
