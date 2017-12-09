@@ -7,6 +7,8 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +29,7 @@ public class CertMasterServiceImpl implements CertMasterService {
 	public CertMaster save(CertMaster entity) {
 		// TODO Auto-generated method stub
 		return certMasterRepository.save(entity);
+		
 	}
 
 	@Override
@@ -70,6 +73,12 @@ public class CertMasterServiceImpl implements CertMasterService {
 		List<CertMaster> list90= certMasterRepository.certCountClientBy90(new Date(), localNintyDate);
 		System.out.println("List90 size="+list90.size());
 		return list90;
+	}
+
+	@Override
+	public Page<CertMaster> getAllCertPagable(Pageable pagable) {
+		// TODO Auto-generated method stub
+		return certMasterRepository.findAll(pagable);
 	}
 
 }

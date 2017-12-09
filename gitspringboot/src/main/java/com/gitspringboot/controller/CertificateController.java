@@ -11,6 +11,8 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -71,6 +73,14 @@ public class CertificateController {
 		return list;
 	}
 	
+	@RequestMapping(value="certPagable",method=RequestMethod.GET)
+	public  ResponseEntity<Page<CertMaster>> certPagable( Pageable pagable)throws BusinessException{
+		
+
+		Page<CertMaster> list=certMasterService.getAllCertPagable(pagable);
+		return new ResponseEntity<Page<CertMaster>>(list, HttpStatus.OK);
+
+	}
 	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="cert",method=RequestMethod.GET)
 	public ResponseEntity<List<CertMaster>> cert()throws BusinessException{

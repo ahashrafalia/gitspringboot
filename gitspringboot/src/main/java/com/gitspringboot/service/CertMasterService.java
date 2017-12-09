@@ -3,6 +3,8 @@ package com.gitspringboot.service;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 
 import com.gitspringboot.model.CertMaster;
@@ -14,5 +16,7 @@ public interface CertMasterService extends ICRUDService<CertMaster> {
 	
 	List<CertMaster>  searchCertViaProcedure(String s1, String d1, String d2);
 	List<CertMaster>  getAllCertViaProcedure();
+	Page<CertMaster>  getAllCertPagable(Pageable pagable);
 	List<CertMaster>  getCertCountClient();
+	
 }

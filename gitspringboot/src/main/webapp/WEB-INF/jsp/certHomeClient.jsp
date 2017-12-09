@@ -268,6 +268,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <!--Pagination https://ciphertrick.com/2015/08/31/server-side-pagination-in-angularjs/ -->
     
   </body>
 </html>
