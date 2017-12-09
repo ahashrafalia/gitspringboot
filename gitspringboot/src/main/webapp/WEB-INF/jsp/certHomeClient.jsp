@@ -33,6 +33,7 @@
     <script src="${pageContext.request.contextPath}/js/certHomeClient.js"></script>
     <script src="${pageContext.request.contextPath}/js/certHomeClientService.js"></script>
     <script src="${pageContext.request.contextPath}/js/certHomeClientController.js"></script>
+    <script src="${pageContext.request.contextPath}/js/dirPagnination.js"></script>
     <script>
 	$(document).ready(function(){
 		var date_input=$('input[name="date"]'); //our date input has the name "date"
@@ -207,24 +208,35 @@
           
 
           <h2>Certificate Details</h2>
+          <div class="alert alert-info">
+					<p>Sort key: {{sortKey}}</p>
+					<p>Reverse: {{reverse}}</p>
+					<p>Search String : {{search}}</p>
+		</div>
           <div class="table-responsive">
-            <table class="table table-striped">
+          <form class="form-inline">
+					<div class="form-group">
+						<label >Search</label>
+						<input type="text" ng-model="search" class="form-control" placeholder="Search">
+					</div>
+			</form>
+            <table class="table table-striped table-hover">
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Cert Id</th>
-                  <th>Client Id</th>
-                  <th>Cert Name</th>
+                  <th ng-click="sort('cert.certId')">Cert Id</th>
+                  <th ng-click="sort('cert.clientId')">Client Id</th>
+                  <th ng-click="sort('cert.certName')">CertName <span class="glyphicon sort-icon" ng-show="sortKey=='cert.certName'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></th>
                   <th>Created Date</th>
                    <th>Renewed Date</th>
-                   <th>Exp Date</th> 
+                   <th ng-click="sort('cert.expDate')">Exp Date</th> 
                    <th>Cert Status</th> 
                    <th width="100">Edit</th>
                    <th width="100">Remove</th>
                 </tr>
               </thead>
               <tbody>
-                <tr ng-repeat="cert in ctrl.certs">
+                <tr dir-paginate="cert in ctrl.certs|filter:search|orderBy:sortKey:reverse|itemsPerPage:100">
                 <td>{{$index+1}}}</td>
                   <td><span ng-bind="cert.certId"></span></td>
                   <td><span ng-bind="cert.clientId"></span></td>
@@ -243,6 +255,11 @@
                 
               </tbody>
             </table>
+            <dir-pagination-controls
+					max-size="25"
+					direction-links="true"
+					boundary-links="true" >
+			</dir-pagination-controls>
           </div>
         </main>
       </div>
