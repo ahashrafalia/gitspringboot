@@ -1,6 +1,6 @@
 'use strict';
 certHome.factory('CertHomeFactory',['$resource',function($resource){
-	var url='http://localhost:8081/gitspringboot/rest/secured/cert/:certId';
+	var url='./rest/secured/cert/:certId';
 	return $resource(url,
 		{
 			certId:'@certId'
@@ -21,7 +21,7 @@ certHome.factory('CertHomeFactory',['$resource',function($resource){
 
 
 certHome.factory('CertHomeFactory2',['$resource',function($resource){
-	var url='http://localhost:8081/gitspringboot/rest/secured/certCountClient';
+	var url='./rest/secured/certCountClient';
 	 var res =  $resource(url, {}, {
 	      query: {
 	        method: 'GET',
