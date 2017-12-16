@@ -4,15 +4,24 @@ import java.util.Date;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceUnit;
 import javax.persistence.StoredProcedureQuery;
 
 import com.gitspringboot.model.CertMaster;
 
+
 public class CertMasterRepositoryImpl implements CertMasterRepositoryCustom {
 
+	//container managed
 	@PersistenceContext	
 	private EntityManager entityManager;
+	
+	
+	//Application managed -not used
+	@PersistenceUnit
+	EntityManagerFactory emf;
 	
 	@Override
 	public List<CertMaster> searchCertViaProcedure(String s1, String d1, String d2) {
@@ -23,6 +32,7 @@ public class CertMasterRepositoryImpl implements CertMasterRepositoryCustom {
 		q.setParameter(2, d1);
 		q.setParameter(3, d2);
 		List<CertMaster> listCert = (List<CertMaster>)q.getResultList();
+		
 		return listCert;
 	}
 
