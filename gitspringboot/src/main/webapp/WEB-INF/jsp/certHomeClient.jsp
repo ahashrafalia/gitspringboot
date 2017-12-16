@@ -34,6 +34,10 @@
     <script src="${pageContext.request.contextPath}/js/certHomeClientService.js"></script>
     <script src="${pageContext.request.contextPath}/js/certHomeClientController.js"></script>
     <script src="${pageContext.request.contextPath}/js/dirPagnination.js"></script>
+    
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/fusioncharts.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/fusioncharts.theme.ocean.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/angular-fusioncharts.js"></script>
     <script>
 	$(document).ready(function(){
 		var date_input=$('input[name="date"]'); //our date input has the name "date"
@@ -49,6 +53,7 @@
   </head>
 
   <body>
+   
     <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
       <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -148,9 +153,17 @@
               <h4>Risk</h4>
               <div class="text-muted caption"><span style="font-size:100%;color:White;">	{{risk}}</span></div>
             </div>
+            
+            <div class="col-6 col-sm-3 placeholder thumbnail text-center">
+              <fusioncharts 
+			    width="400" 
+			    height="400"
+			    type="pie3d"
+			    datasource="{{myDataSource}}"></fusioncharts>
+            </div>
           </section>
           
-          
+         
           <h2>Certificate Form </h2>
               <div class="formcontainer">
                   <form ng-submit="ctrl.submit()" name="myForm" class="form-horizontal">

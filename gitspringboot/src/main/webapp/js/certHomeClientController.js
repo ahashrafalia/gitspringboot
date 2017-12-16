@@ -130,6 +130,41 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','CertHomeFa
         $scope.reverse = !$scope.reverse; //if true make it false and vice versa
     }
 	
+	
+	$scope.myDataSource = {
+		    chart: {
+		        caption: "Certificate Status",
+		        subcaption: "Today",
+		        startingangle: "120",
+		        showlabels: "0",
+		        showlegend: "1",
+		        enablemultislicing: "0",
+		        slicingdistance: "15",
+		        showpercentvalues: "1",
+		        showpercentintooltip: "0",
+		        plottooltext: "Certficate Status : $label Total : $datavalue",
+		        theme: "fint"
+		    },
+		    data: [
+		        {
+		            label: "Good",
+		            value: 56
+		        },
+		        {
+		            label: "Safe",
+		            value: "5"
+		        },
+		        {
+		            label: "Risk",
+		            value: "5"
+		        },
+		        {
+		            label: "Warn",
+		            value: "5"
+		        }
+		    ]
+		}
+	
 }]);
 
 
