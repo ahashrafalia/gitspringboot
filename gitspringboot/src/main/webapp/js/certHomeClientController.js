@@ -142,8 +142,8 @@ certHome.controller('certHomeClientCtrl',['$scope','CertHomeFactory','CertHomeFa
 		        slicingdistance: "15",
 		        showpercentvalues: "1",
 		        showpercentintooltip: "0",
-		        plottooltext: "Certficate Status : $label Total : $datavalue",
-		        theme: "fint"
+		        plottooltext: "Certficate Status : $label Total : $datavalue"
+		        
 		    },
 		    data: [
 		        {
