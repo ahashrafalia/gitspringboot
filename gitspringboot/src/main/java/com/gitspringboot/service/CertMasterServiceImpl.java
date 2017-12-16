@@ -14,10 +14,11 @@ import org.springframework.stereotype.Service;
 
 import com.gitspringboot.config.SchedulerProperties;
 import com.gitspringboot.dao.CertMasterRepository;
+import com.gitspringboot.logger.Loggable;
 import com.gitspringboot.model.CertMaster;
 
 @Service
-public class CertMasterServiceImpl implements CertMasterService {
+public class CertMasterServiceImpl implements CertMasterService,Loggable {
 
 	@Autowired
 	CertMasterRepository certMasterRepository ; 
@@ -63,6 +64,7 @@ public class CertMasterServiceImpl implements CertMasterService {
 
 	@Override
 	public List<CertMaster> getAllCertViaProcedure() {
+		 logger().info("from funcation interface logger getAllCertViaProcedure");
 		return certMasterRepository.getAllCertViaProcedure();
 	}
 
