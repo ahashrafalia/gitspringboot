@@ -2,6 +2,7 @@ package com.gitspringboot.config;
 
 import java.util.Properties;
 
+import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,8 +31,8 @@ public class DatabaseConfig {
 	  @Autowired
 	  private DataSource dataSource;
 
-	  @Autowired
-	  private LocalContainerEntityManagerFactoryBean entityManagerFactory;
+	 // @Autowired
+	 // private LocalContainerEntityManagerFactoryBean entityManagerFactory;
 
   // ------------------------
   // PUBLIC METHODS
@@ -92,11 +93,11 @@ public class DatabaseConfig {
    * Declare the transaction manager.
    */
   @Bean
-  public JpaTransactionManager transactionManager() {
+  public JpaTransactionManager transactionManager(EntityManagerFactory emf) {
     JpaTransactionManager transactionManager = 
         new JpaTransactionManager();
-    transactionManager.setEntityManagerFactory(
-        entityManagerFactory.getObject());
+    //transactionManager.setEntityManagerFactory(entityManagerFactory.getObject());
+    transactionManager.setEntityManagerFactory(emf);
     return transactionManager;
   }
   
