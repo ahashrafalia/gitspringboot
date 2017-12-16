@@ -30,6 +30,7 @@ import com.gitspringboot.bean.CertDetailMap;
 import com.gitspringboot.dao.CertMasterSpecification;
 import com.gitspringboot.dao.ClientMasterSpecification;
 import com.gitspringboot.exception.BusinessException;
+import com.gitspringboot.logger.Loggable;
 import com.gitspringboot.model.CertMaster;
 import com.gitspringboot.model.ClientMaster;
 import com.gitspringboot.model.Response;
@@ -84,7 +85,7 @@ public class CertificateController {
 	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="cert",method=RequestMethod.GET)
 	public ResponseEntity<List<CertMaster>> cert()throws BusinessException{
-		
+		 //logger().info("on method1");
 		//List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
 		List<CertMaster> list=certMasterService.getAllCertViaProcedure();
 		return new ResponseEntity<>(list, HttpStatus.OK);
@@ -94,6 +95,7 @@ public class CertificateController {
 	 @RequestMapping(value = "/cert/{id}", method = RequestMethod.GET)
 	    public ResponseEntity<CertMaster> getUser(@PathVariable("id") long id) throws BusinessException{
 	        System.out.println("Fetching CertMaster with id " + id);
+	        //logger().info("Fetching CertMaster with id " + id);
 	        CertMaster user = certMasterService.getById(Long.valueOf(id));
 	        if (user == null || user.getCertId() <= 0){
 	            throw new BusinessException("ToDo doesn´t exist");
@@ -158,7 +160,7 @@ public class CertificateController {
 	//@PreAuthorize("hasAnyRole('ROLE_CLIENT')")
 	@RequestMapping(value="certCountClient",method=RequestMethod.GET)
 	public ResponseEntity<CertDetailMap>  certCountClient(){
-		
+		//logger().info("certCountClient invoked ");
 		//List<CertMaster> list=certMasterService.searchCertViaProcedure("", "30-Nov-17", "30-Dec-17");
 		LocalDate local90=LocalDate.now().plusDays(91);
 		LocalDate local60=LocalDate.now().plusDays(61);
@@ -177,10 +179,10 @@ public class CertificateController {
 		List<CertMaster> list15_30=list.stream().filter(v->v.getExpDate().after(date15)&& v.getExpDate().before(date30)).collect(Collectors.toList());
 		List<CertMaster> list_15=list.stream().filter(v->v.getExpDate().before(date15)).collect(Collectors.toList());
 		
-		System.out.println("list60_90 size="+list60_90.size()+","+list60_90);
-		System.out.println("list30_60 size="+list30_60.size()+","+list30_60);
-		System.out.println("list15_30 size="+list15_30.size()+","+list15_30);
-		System.out.println("list15 size="+list_15.size()+","+list_15);
+		//logger().info("list60_90 size="+list60_90.size()+","+list60_90);
+		///logger().info("list30_60 size="+list30_60.size()+","+list30_60);
+		//logger().info("list15_30 size="+list15_30.size()+","+list15_30);
+		//logger().info("list15 size="+list_15.size()+","+list_15);
 		Map<String,Object> certCountMap=new LinkedHashMap<>();
 		certCountMap.put("good",String.valueOf(list60_90.size()));
 		certCountMap.put("safe",String.valueOf( list30_60.size()));

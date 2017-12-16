@@ -1,1 +1,1 @@
-var certHome=angular.module('certHomeClient',['ngResource','angularUtils.directives.dirPagination']);
+var certHome=angular.module('certHomeClient',['ngResource','angularUtils.directives.dirPagination','ng-fusioncharts']);
