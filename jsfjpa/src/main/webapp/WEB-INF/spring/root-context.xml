@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util" 
+	 xmlns:tx="http://www.springframework.org/schema/tx"
+	 xmlns:p="http://www.springframework.org/schema/p"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+	 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:component-scan base-package="com.dp"/>
+	
+ <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    	<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    	<property name="url" value="jdbc:mysql://localhost:3306/test" />
+    	<property name="username" value="root" />
+    	<property name="password" value="root" />
+  	</bean>
+    
+    <bean id="emf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+    	<property name="packagesToScan" >
+            <list>
+                <value>com.dp.entity</value>
+            </list>
+        </property>
+    	
+    	<property name="dataSource" ref="dataSource"></property>
+    	        
+    	<property name="jpaVendorAdapter" ref="jpaVendorAdapter"/>
+    	<property name="persistenceUnitName" value="dev" />
+    	
+    	<property name="jpaProperties">
+         <props>
+            <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+            <prop key="hibernate.hbm2ddl.auto">update</prop>
+            <prop key="hibernate.show_sql">true</prop>
+            <prop key="hibernate.format_sql">false</prop>
+            <prop key="hibernate.use_sql_comments">false</prop>
+            <prop key="hibernate.jdbc.wrap_result_sets">false</prop>
+            <prop key="hibernate.hibernate.cache.use_query_cache">true</prop>
+         </props>
+      </property>
+    </bean>
+    
+    <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+  		<property name="showSql" value="true"/>
+	  	<property name="generateDdl" value="true"/>
+  		<property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect"/>
+	</bean>
+		
+	<bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="emf" />
+	</bean>
+	
+<tx:annotation-driven transaction-manager="txManager" proxy-target-class="true" />
+</beans>

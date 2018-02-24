@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	
+</h:head>
+<h:body>
+	
+
+	<ui:composition>
+		
+
+
+
+
+
+
+
+			<h:form id="certForm">
+
+				<p:dataTable id="certTableId" var="certTable"
+					value="#{certMB.certDataModel}" paginator="true" editable="true"
+					selection="#{certMB.selectedUsers}" rows="10">
+
+
+					<f:facet name="header">	
+         					  Certificate Management
+          			 <p:commandButton value="Add" type="button"
+							update=":addCertFormId:addPanel" onclick="addCert.show()">
+						</p:commandButton>
+
+						<p:commandButton value="Delete" update=":certForm:certTableId"
+							actionListener="#{certMB.deleteCert(event)}">
+						</p:commandButton>
+
+						<p:commandButton value="Print" type="button" icon="ui-icon-print">
+							<p:printer target="certTableId" />
+						</p:commandButton>
+					</f:facet>
+
+					<p:column selectionMode="multiple" style="width:2%" />
+
+					<p:column>
+						<f:facet name="header">
+							<h:outputText value="Edit" />
+						</f:facet>
+
+						<p:commandLink value="Edit" update=":editCertFromId:editpanel"
+							oncomplete="editCertDialog.show()" title="Update">
+							<f:setPropertyActionListener value="#{certTable}"
+								target="#{certMB.selectedCert}" />
+						</p:commandLink>
+					</p:column>
+
+					<p:column headerText="CertName" style="width:25%">
+            #{certTable.certname}
+        </p:column>
+
+					<p:column headerText="CertOwner" style="width:25%">
+            #{certTable.owner}
+        </p:column>
+
+					<p:column headerText="Cert Date" style="width:24%">
+            #{certTable.date}
+        </p:column>
+
+				</p:dataTable>
+
+			</h:form>
+		
+	</ui:composition>
+</h:body>
+</html>
+
+
+
+
+
+
+
+

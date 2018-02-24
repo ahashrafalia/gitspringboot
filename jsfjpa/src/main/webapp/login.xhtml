@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Dubai Police</title>
+</h:head>
+<h:body>
+	<h:form id="loginForm">
+		
+		<p:panel id="loginPnl"  style="width: 350px; margin: 0 auto;">
+		<p:messages id="msg"></p:messages>
+			<h:panelGrid id="loginPanel" columns="2" cellpadding="5">
+				<h:outputText value="Username" />
+				<p:inputText id="username" value="#{loginController.loginBean.uname}"></p:inputText>
+				
+				<p:spacer /><p:spacer />	
+				<h:outputText value="Password" />
+				<p:password id="password" value="#{loginController.loginBean.password}"></p:password>
+				
+			</h:panelGrid>
+			
+			<h:panelGrid columns="1" cellpadding="10" width="100%">
+				<p:commandButton id="loginButton" action="#{loginController.onClick}"
+					value="Login" update="loginForm"  style="float: right;">
+				</p:commandButton>
+			</h:panelGrid>
+		</p:panel>
+		<!-- <p:blockUI block="loginPnl" trigger="loginButton" style="float:right;">
+			<p:graphicImage value="resources/images/loader.gif" />
+		</p:blockUI> -->
+</h:form>
+</h:body>
+</html>
