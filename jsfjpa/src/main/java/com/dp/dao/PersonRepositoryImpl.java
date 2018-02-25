@@ -10,19 +10,21 @@ import org.springframework.stereotype.Repository;
 import com.dp.entity.Person;
 
 @Repository("personRepository")
-public class PersonRepositoryImpl implements PersonRepository {
+public class PersonRepositoryImpl implements PersonRepositoryCustom {
 
 	@PersistenceContext
 	private EntityManager em;
 	
 	
 	public Person create(Person person) {
-		System.out.println("em="+em);
+		//System.out.println("em="+em);
+		//person=new Person("fir","sec","asbc@gmail.com");
 		this.em.persist(person);
-		return null;
+		System.out.println("Dao person="+person);
+		return person;
 	}
 
-	public Person update(Person person) {
+/*	public Person update(Person person) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -40,6 +42,6 @@ public class PersonRepositoryImpl implements PersonRepository {
 	public List<Person> findAll() {
 		// TODO Auto-generated method stub
 		return null;
-	}
+	}*/
 
 }

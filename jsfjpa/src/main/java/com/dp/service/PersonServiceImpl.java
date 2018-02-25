@@ -4,7 +4,9 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.db.bean.PersonBean;
 import com.dp.dao.PersonRepository;
 import com.dp.entity.Person;
 
@@ -14,9 +16,14 @@ public class PersonServiceImpl implements PersonService {
 	@Autowired
 	private PersonRepository personRepository;
 
-	public Person create(Person person) {
+	@Transactional
+	public Person create(PersonBean person) {
 		System.out.println("personRepository="+personRepository);
-		return personRepository.create(person);
+		Person p=new Person();
+		p.setFirstName(person.getFname());
+		p.setLastName(person.getLname());
+		p.setEmail(person.getEmail());
+		return personRepository.create(p);
 	}
 
 	public Person update(Person person) {

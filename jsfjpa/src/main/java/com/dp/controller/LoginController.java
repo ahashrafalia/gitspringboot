@@ -11,14 +11,15 @@ import javax.faces.context.FacesContext;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import com.db.bean.LoginBean;
 import com.dp.service.LoginService;
 
-@Component
-@ManagedBean(name="loginController")
+
+@ManagedBean
 @SessionScoped
-public class LoginController  {
+public class LoginController  extends SpringBeanAutowiringSupport{
 
 	/**
 	 * 
@@ -29,7 +30,7 @@ public class LoginController  {
 	
 	
 	@Autowired
-	private LoginService loginService;
+	LoginService loginService;
 	
 	LoginBean loginBean=new LoginBean();
 

@@ -17,10 +17,11 @@ public class Certusers implements Serializable{
 	public Certusers(){
 		
 	}
-	//@Column(name="id",nullable=false)
+	@Id
+	@Column(name="id",nullable=false)
 	private int id;
 	
-	@Id
+
 	@Column(name="name",nullable=false)
 	private String name;
 	

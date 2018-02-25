@@ -30,7 +30,7 @@ public class PersonController extends SpringBeanAutowiringSupport{
    
     
     public void welcome(){
-    	System.out.println("hi personDao="+personBean.getName()+" "+personService.create(new Person()));
+    	System.out.println("hi personDao= "+personService.create(personBean));
     }
 
 

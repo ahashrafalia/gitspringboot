@@ -1,5 +1,8 @@
 package com.dp.dao;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.jboss.logging.Logger;
@@ -11,11 +14,30 @@ import com.dp.entity.Certusers;
 import com.dp.exception.BusinessException;
 
 @Repository
-public class LoginDaoImpl implements LoginDao{
+public class LoginRepositoryImpl implements LoginRepositoryCustom{
 	
-	Logger log=Logger.getLogger(LoginDaoImpl.class);
+	@PersistenceContext	
+	private EntityManager entityManager;
 	
-	//@Autowired
+	Logger log=Logger.getLogger(LoginRepositoryImpl.class);
+	
+
+	public String doLogin(Certusers certUsers) throws BusinessException {
+		try {
+			Certusers cu = (Certusers) entityManager.createQuery("from certusers cu where cu.name=? and cu.pass=?")
+					.setParameter(1, certUsers.getName()).setParameter(2, certUsers.getPass()).getSingleResult();
+			if (cu != null) {
+				return "ok";
+			} else {
+				return "";
+			} 
+		} catch (Exception e) {
+			return "";
+		}
+		
+	}
+	
+	/*//@Autowired
 	private SessionFactory sessionFactory;
 
 	public String doLogin(LoginBean loginBean)throws BusinessException {
@@ -39,6 +61,6 @@ public class LoginDaoImpl implements LoginDao{
 	
 	}
 	
-	
+	*/
 
 }

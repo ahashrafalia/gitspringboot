@@ -5,11 +5,14 @@
 	 xmlns:tx="http://www.springframework.org/schema/tx"
 	 xmlns:p="http://www.springframework.org/schema/p"
 	 xmlns:context="http://www.springframework.org/schema/context"
+	 xmlns:jpa="http://www.springframework.org/schema/data/jpa"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	
 	
 	 http://www.springframework.org/schema/beans/spring-beans.xsd
 	 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
-	 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	  http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 	
 	<context:component-scan base-package="com.dp"/>
 	
@@ -37,8 +40,8 @@
             <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
             <prop key="hibernate.hbm2ddl.auto">update</prop>
             <prop key="hibernate.show_sql">true</prop>
-            <prop key="hibernate.format_sql">false</prop>
-            <prop key="hibernate.use_sql_comments">false</prop>
+            <prop key="hibernate.format_sql">true</prop>
+            <prop key="hibernate.use_sql_comments">true</prop>
             <prop key="hibernate.jdbc.wrap_result_sets">false</prop>
             <prop key="hibernate.hibernate.cache.use_query_cache">true</prop>
          </props>
@@ -54,6 +57,8 @@
 	<bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
 		<property name="entityManagerFactory" ref="emf" />
 	</bean>
+	<jpa:repositories base-package="com.dp.dao"  entity-manager-factory-ref="emf"
+                  transaction-manager-ref="txManager"/> 
+	<tx:annotation-driven transaction-manager="txManager" proxy-target-class="true" />
 	
-<tx:annotation-driven transaction-manager="txManager" proxy-target-class="true" />
 </beans>

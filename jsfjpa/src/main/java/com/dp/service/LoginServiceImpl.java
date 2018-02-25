@@ -5,17 +5,25 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.db.bean.LoginBean;
-import com.dp.dao.LoginDao;
+import com.dp.dao.LoginRepository;
+import com.dp.dao.PersonRepository;
+import com.dp.entity.Certusers;
 import com.dp.exception.BusinessException;
 
-@Service
+@Service("loginService")
 public class LoginServiceImpl implements LoginService{
 
 	@Autowired
-	LoginDao loginDao;
+	private LoginRepository loginRepository;
+	
+	@Autowired
+	private PersonRepository personRepository;
 	
 	@Transactional
 	public String doLogin(LoginBean loginBean)throws BusinessException{
-		return loginDao.doLogin( loginBean);
+		Certusers cu=new Certusers();
+		cu.setName(loginBean.getUname());
+		cu.setPass(loginBean.getPassword());
+		return loginRepository.doLogin( cu);
 	}
 }
